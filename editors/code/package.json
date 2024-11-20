@@ -1,7 +1,7 @@
 {
     "name": "rust-analyzer",
     "displayName": "rust-analyzer",
-    "description": "Rust language support for Visual Studio Code",
+    "description": "Rust 语言 Visual Studio Code 支持",
     "private": true,
     "icon": "icon.png",
     "version": "0.5.0-dev",
@@ -23,13 +23,13 @@
     "capabilities": {
         "untrustedWorkspaces": {
             "supported": false,
-            "description": "rust-analyzer invokes binaries set up by its configuration as well as the Rust toolchain's binaries. A malicious actor could exploit this to run arbitrary code on your machine."
+            "description": "rust-analyzer 会调用由其配置设置的二进制文件以及 Rust 工具链的二进制文件。恶意行为者可以利用这一点在你的机器上运行任意代码。"
         }
     },
     "engines": {
         "vscode": "^1.83.0"
     },
-    "enabledApiProposals": [],
+    
     "scripts": {
         "vscode:prepublish": "npm run build-base -- --minify",
         "package": "vsce package -o rust-analyzer.vsix",
@@ -110,202 +110,202 @@
         "commands": [
             {
                 "command": "rust-analyzer.syntaxTree",
-                "title": "Show Syntax Tree",
-                "category": "rust-analyzer (debug command)"
+                "title": "显示语法树",
+                "category": "rust-analyzer (调试命令)"
             },
             {
                 "command": "rust-analyzer.viewHir",
-                "title": "View Hir",
-                "category": "rust-analyzer (debug command)"
+                "title": "查看Hir",
+                "category": "rust-analyzer (调试命令)"
             },
             {
                 "command": "rust-analyzer.viewMir",
-                "title": "View Mir",
-                "category": "rust-analyzer (debug command)"
+                "title": "查看Mir",
+                "category": "rust-analyzer (调试命令)"
             },
             {
                 "command": "rust-analyzer.interpretFunction",
-                "title": "Interpret",
-                "category": "rust-analyzer (debug command)"
+                "title": "解释执行",
+                "category": "rust-analyzer (调试命令)"
             },
             {
                 "command": "rust-analyzer.viewFileText",
-                "title": "View File Text (as seen by the server)",
-                "category": "rust-analyzer (debug command)"
+                "title": "查看文件文本（服务器视角）",
+                "category": "rust-analyzer (调试命令)"
             },
             {
                 "command": "rust-analyzer.viewItemTree",
-                "title": "Debug ItemTree",
-                "category": "rust-analyzer (debug command)"
+                "title": "调试ItemTree",
+                "category": "rust-analyzer (调试命令)"
             },
             {
                 "command": "rust-analyzer.memoryUsage",
-                "title": "Memory Usage (Clears Database)",
-                "category": "rust-analyzer (debug command)"
+                "title": "内存使用（清除数据库）",
+                "category": "rust-analyzer (调试命令)"
             },
             {
                 "command": "rust-analyzer.viewCrateGraph",
-                "title": "View Crate Graph",
+                "title": "查看Crate图",
                 "category": "rust-analyzer"
             },
             {
                 "command": "rust-analyzer.viewFullCrateGraph",
-                "title": "View Crate Graph (Full)",
+                "title": "查看完整Crate图",
                 "category": "rust-analyzer"
             },
             {
                 "command": "rust-analyzer.expandMacro",
-                "title": "Expand macro recursively at caret",
+                "title": "在光标处递归展开宏",
                 "category": "rust-analyzer"
             },
             {
                 "command": "rust-analyzer.matchingBrace",
-                "title": "Find matching brace",
+                "title": "查找匹配的大括号",
                 "category": "rust-analyzer"
             },
             {
                 "command": "rust-analyzer.parentModule",
-                "title": "Locate parent module",
+                "title": "定位父模块",
                 "category": "rust-analyzer"
             },
             {
                 "command": "rust-analyzer.joinLines",
-                "title": "Join lines",
+                "title": "合并行",
                 "category": "rust-analyzer"
             },
             {
                 "command": "rust-analyzer.run",
-                "title": "Run",
+                "title": "运行",
                 "category": "rust-analyzer"
             },
             {
                 "command": "rust-analyzer.copyRunCommandLine",
-                "title": "Copy Run Command Line",
+                "title": "复制运行命令行",
                 "category": "rust-analyzer"
             },
             {
                 "command": "rust-analyzer.debug",
-                "title": "Debug",
+                "title": "调试",
                 "category": "rust-analyzer"
             },
             {
                 "command": "rust-analyzer.newDebugConfig",
-                "title": "Generate launch configuration",
+                "title": "生成启动配置",
                 "category": "rust-analyzer"
             },
             {
                 "command": "rust-analyzer.analyzerStatus",
-                "title": "Status",
+                "title": "状态",
                 "category": "rust-analyzer"
             },
             {
                 "command": "rust-analyzer.reloadWorkspace",
-                "title": "Reload workspace",
+                "title": "重新加载工作区",
                 "category": "rust-analyzer"
             },
             {
                 "command": "rust-analyzer.rebuildProcMacros",
-                "title": "Rebuild proc macros and build scripts",
+                "title": "重建过程宏和构建脚本",
                 "category": "rust-analyzer"
             },
             {
                 "command": "rust-analyzer.restartServer",
-                "title": "Restart server",
+                "title": "重启服务器",
                 "category": "rust-analyzer"
             },
             {
                 "command": "rust-analyzer.startServer",
-                "title": "Start server",
+                "title": "启动服务器",
                 "category": "rust-analyzer"
             },
             {
                 "command": "rust-analyzer.stopServer",
-                "title": "Stop server",
+                "title": "停止服务器",
                 "category": "rust-analyzer"
             },
             {
                 "command": "rust-analyzer.onEnter",
-                "title": "Enhanced enter key",
+                "title": "增强回车键",
                 "category": "rust-analyzer"
             },
             {
                 "command": "rust-analyzer.ssr",
-                "title": "Structural Search Replace",
+                "title": "结构搜索替换",
                 "category": "rust-analyzer"
             },
             {
                 "command": "rust-analyzer.serverVersion",
-                "title": "Show RA Version",
+                "title": "显示RA版本",
                 "category": "rust-analyzer"
             },
             {
                 "command": "rust-analyzer.openDocs",
-                "title": "Open Docs",
+                "title": "打开文档",
                 "category": "rust-analyzer"
             },
             {
                 "command": "rust-analyzer.openExternalDocs",
-                "title": "Open External Docs",
+                "title": "打开外部文档",
                 "category": "rust-analyzer"
             },
             {
                 "command": "rust-analyzer.openCargoToml",
-                "title": "Open Cargo.toml",
+                "title": "打开Cargo.toml",
                 "category": "rust-analyzer"
             },
             {
                 "command": "rust-analyzer.peekTests",
-                "title": "Peek Related Tests",
+                "title": "预览相关测试",
                 "category": "rust-analyzer"
             },
             {
                 "command": "rust-analyzer.moveItemUp",
-                "title": "Move Item Up",
+                "title": "向上移动项",
                 "category": "rust-analyzer"
             },
             {
                 "command": "rust-analyzer.moveItemDown",
-                "title": "Move Item Down",
+                "title": "向下移动项",
                 "category": "rust-analyzer"
             },
             {
                 "command": "rust-analyzer.cancelFlycheck",
-                "title": "Cancel running flychecks",
+                "title": "取消运行中的飞检",
                 "category": "rust-analyzer"
             },
             {
                 "command": "rust-analyzer.runFlycheck",
-                "title": "Run flycheck",
+                "title": "运行飞检",
                 "category": "rust-analyzer"
             },
             {
                 "command": "rust-analyzer.clearFlycheck",
-                "title": "Clear flycheck diagnostics",
+                "title": "清除飞检诊断",
                 "category": "rust-analyzer"
             },
             {
                 "command": "rust-analyzer.revealDependency",
-                "title": "Reveal File",
+                "title": "显示依赖文件",
                 "category": "rust-analyzer"
             },
             {
                 "command": "rust-analyzer.viewMemoryLayout",
-                "title": "View Memory Layout",
+                "title": "查看内存布局",
                 "category": "rust-analyzer"
             },
             {
                 "command": "rust-analyzer.toggleCheckOnSave",
-                "title": "Toggle Check on Save",
+                "title": "切换保存时检查",
                 "category": "rust-analyzer"
             },
             {
                 "command": "rust-analyzer.toggleLSPLogs",
-                "title": "Toggle LSP Logs",
+                "title": "切换LSP日志",
                 "category": "rust-analyzer"
             },
             {
                 "command": "rust-analyzer.openWalkthrough",
-                "title": "Open Walkthrough",
+                "title": "打开教程",
                 "category": "rust-analyzer"
             }
         ],
@@ -326,35 +326,35 @@
                 "title": "general",
                 "properties": {
                     "rust-analyzer.restartServerOnConfigChange": {
-                        "markdownDescription": "Whether to restart the server automatically when certain settings that require a restart are changed.",
-                        "default": false,
-                        "type": "boolean"
-                    },
-                    "rust-analyzer.showUnlinkedFileNotification": {
-                        "markdownDescription": "Whether to show a notification for unlinked files asking the user to add the corresponding Cargo.toml to the linked projects setting.",
-                        "default": true,
-                        "type": "boolean"
-                    },
-                    "rust-analyzer.showRequestFailedErrorNotification": {
-                        "markdownDescription": "Whether to show error notifications for failing requests.",
-                        "default": true,
-                        "type": "boolean"
-                    },
-                    "rust-analyzer.showDependenciesExplorer": {
-                        "markdownDescription": "Whether to show the dependencies view.",
-                        "default": true,
-                        "type": "boolean"
-                    },
-                    "rust-analyzer.testExplorer": {
-                        "markdownDescription": "Whether to show the test explorer.",
-                        "default": false,
-                        "type": "boolean"
-                    },
-                    "rust-analyzer.initializeStopped": {
-                        "markdownDescription": "Do not start rust-analyzer server when the extension is activated.",
-                        "default": false,
-                        "type": "boolean"
-                    }
+                    "markdownDescription": "当更改需要重启的某些设置时，是否自动重启服务器。",
+                    "default": false,
+                    "type": "boolean"
+                },
+                "rust-analyzer.showUnlinkedFileNotification": {
+                    "markdownDescription": "是否显示未链接文件的通知，提示用户将相应的 Cargo.toml 添加到链接项目设置中。",
+                    "default": true,
+                    "type": "boolean"
+                },
+                "rust-analyzer.showRequestFailedErrorNotification": {
+                    "markdownDescription": "是否显示失败请求的错误通知。",
+                    "default": true,
+                    "type": "boolean"
+                },
+                "rust-analyzer.showDependenciesExplorer": {
+                    "markdownDescription": "是否显示依赖视图。",
+                    "default": true,
+                    "type": "boolean"
+                },
+                "rust-analyzer.testExplorer": {
+                    "markdownDescription": "是否显示测试浏览器。",
+                    "default": false,
+                    "type": "boolean"
+                },
+                "rust-analyzer.initializeStopped": {
+                    "markdownDescription": "扩展激活时不启动 rust-analyzer 服务器。",
+                    "default": false,
+                    "type": "boolean"
+                }
                 }
             },
             {
@@ -377,26 +377,26 @@
                                                 "array"
                                             ],
                                             "default": null,
-                                            "markdownDescription": "Platform(s) filter like \"win32\" or [\"linux\", \"win32\"]. See [process.platform](https://nodejs.org/api/process.html#processplatform) values."
+                                            "markdownDescription": "平台过滤，如 \"win32\" 或 [\"linux\", \"win32\"]。查看 [process.platform](https://nodejs.org/api/process.html#processplatform) 的值。"
                                         },
                                         "mask": {
                                             "type": "string",
-                                            "description": "Runnable name mask"
+                                            "description": "可运行名称掩码"
                                         },
                                         "env": {
                                             "type": "object",
-                                            "description": "Variables in form of { \"key\": \"value\"}"
+                                            "description": "形式为 { \"key\": \"value\"} 的变量"
                                         }
                                     }
                                 }
                             },
                             {
                                 "type": "object",
-                                "description": "Variables in form of { \"key\": \"value\"}"
+                                "description": "形式为 { \"key\": \"value\"} 的变量"
                             }
                         ],
                         "default": null,
-                        "markdownDescription": "Environment variables passed to the runnable launched using `Test` or `Debug` lens or `rust-analyzer.run` command."
+                        "markdownDescription": "通过 `Test` 或 `Debug` 镜头启动的可运行程序，或使用 `rust-analyzer.run` 命令时传递的环境变量。"
                     },
                     "rust-analyzer.runnables.problemMatcher": {
                         "type": "array",
@@ -406,7 +406,7 @@
                         "default": [
                             "$rustc"
                         ],
-                        "markdownDescription": "Problem matchers to use for `rust-analyzer.run` command, eg `[\"$rustc\", \"$rust-panic\"]`."
+                        "markdownDescription": "用于 `rust-analyzer.run` 命令的问题匹配器，例如 `[\"$rustc\", \"$rust-panic\"]`。"
                     }
                 }
             },
@@ -424,7 +424,7 @@
                             "Open Logs"
                         ],
                         "default": "openLogs",
-                        "markdownDescription": "Action to run when clicking the extension status bar item."
+                        "markdownDescription": "点击扩展状态栏项目时要执行的操作。"
                     }
                 }
             },
@@ -438,7 +438,7 @@
                         ],
                         "scope": "machine-overridable",
                         "default": null,
-                        "markdownDescription": "Path to rust-analyzer executable (points to bundled binary by default)."
+                        "markdownDescription": "rust-analyzer可执行文件的路径（默认指向捆绑的二进制文件）。"
                     },
                     "rust-analyzer.server.extraEnv": {
                         "type": [
@@ -452,7 +452,7 @@
                             ]
                         },
                         "default": null,
-                        "markdownDescription": "Extra environment variables that will be passed to the rust-analyzer executable. Useful for passing e.g. `RA_LOG` for debugging."
+                        "markdownDescription": "将传递给rust-analyzer可执行文件的额外环境变量。对于传递例如`RA_LOG`进行调试很有用。"
                     }
                 }
             },
@@ -468,16 +468,16 @@
                             "verbose"
                         ],
                         "enumDescriptions": [
-                            "No traces",
-                            "Error only",
-                            "Full log"
+                            "不跟踪",
+                            "仅错误",
+                            "完整日志"
                         ],
                         "default": "off",
-                        "description": "Trace requests to the rust-analyzer (this is usually overly verbose and not recommended for regular users)."
+                        "description": "跟踪对rust-analyzer的请求（这通常会过于冗长，不推荐普通用户使用）。"
                     },
                     "rust-analyzer.trace.extension": {
-                        "description": "Enable logging of VS Code extensions itself.",
-                        "markdownDeprecationMessage": "Log level is now controlled by the [Developer: Set Log Level...](command:workbench.action.setLogLevel) command.You can set the log level for the current session and also the default log level from there. This is also available by clicking the gear icon on the OUTPUT tab when Rust Analyzer Client is visible or by passing the --log rust-lang.rust-analyzer:debug parameter to VS Code.",
+                        "description": "启用VS Code扩展自身的日志记录。",
+                        "markdownDeprecationMessage": "日志级别现在由[Developer: Set Log Level...](command:workbench.action.setLogLevel)命令控制。您可以在那里设置当前会话的日志级别以及默认的日志级别。当Rust Analyzer Client可见时，您也可以通过点击OUTPUT标签上的齿轮图标来设置，或者通过向VS Code传递--log rust-lang.rust-analyzer:debug参数来实现。",
                         "type": "boolean",
                         "default": false
                     }
@@ -496,13 +496,13 @@
                             "webfreak.debug"
                         ],
                         "default": "auto",
-                        "description": "Preferred debug engine.",
+                        "description": "首选的调试引擎。",
                         "markdownEnumDescriptions": [
-                            "Use the first available extension out of [LLDB DAP](https://marketplace.visualstudio.com/items?itemName=llvm-vs-code-extensions.lldb-dap), [CodeLLDB](https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb), [C/C++ for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools), and [Native Debug](https://marketplace.visualstudio.com/items?itemName=webfreak.debug).",
-                            "Use [LLDB DAP](https://marketplace.visualstudio.com/items?itemName=llvm-vs-code-extensions.lldb-dap)",
-                            "Use [CodeLLDB](https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb)",
-                            "Use [C/C++ for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools)",
-                            "Use [Native Debug](https://marketplace.visualstudio.com/items?itemName=webfreak.debug)"
+                            "使用以下扩展中第一个可用的：[LLDB DAP](https://marketplace.visualstudio.com/items?itemName=llvm-vs-code-extensions.lldb-dap)、[CodeLLDB](https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb)、[C/C++ for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools)和[Native Debug](https://marketplace.visualstudio.com/items?itemName=webfreak.debug)。",
+                            "使用[LLDB DAP](https://marketplace.visualstudio.com/items?itemName=llvm-vs-code-extensions.lldb-dap)。",
+                            "使用[CodeLLDB](https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb)。",
+                            "使用[C/C++ for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools)。",
+                            "使用[Native Debug](https://marketplace.visualstudio.com/items?itemName=webfreak.debug)。"
                         ]
                     },
                     "rust-analyzer.debug.sourceFileMap": {
@@ -511,25 +511,25 @@
                             "string"
                         ],
                         "const": "auto",
-                        "description": "Optional source file mappings passed to the debug engine.",
+                        "description": "可选的源文件映射，传递给调试引擎。",
                         "default": {
                             "/rustc/<id>": "${env:USERPROFILE}/.rustup/toolchains/<toolchain-id>/lib/rustlib/src/rust"
                         }
                     },
                     "rust-analyzer.debug.openDebugPane": {
-                        "markdownDescription": "Whether to open up the `Debug Panel` on debugging start.",
+                        "markdownDescription": "是否在开始调试时打开`调试面板`。",
                         "type": "boolean",
                         "default": false
                     },
                     "rust-analyzer.debug.buildBeforeRestart": {
-                        "markdownDescription": "Whether to rebuild the project modules before debugging the same test again",
+                        "markdownDescription": "是否在再次调试同一个测试前重建项目模块。",
                         "type": "boolean",
                         "default": false
                     },
                     "rust-analyzer.debug.engineSettings": {
                         "type": "object",
                         "default": {},
-                        "markdownDescription": "Optional settings passed to the debug engine. Example: `{ \"lldb\": { \"terminal\":\"external\"} }`"
+                        "markdownDescription": "传递给调试引擎的可选设置。示例：`{ \"lldb\": { \"terminal\":\"external\"} }`"
                     }
                 }
             },
@@ -537,7 +537,7 @@
                 "title": "typing",
                 "properties": {
                     "rust-analyzer.typing.continueCommentsOnNewline": {
-                        "markdownDescription": "Whether to prefix newlines after comments with the corresponding comment prefix.",
+                        "markdownDescription": "在注释后的新行是否添加相应的注释前缀。",
                         "default": true,
                         "type": "boolean"
                     }
@@ -547,25 +547,22 @@
                 "title": "diagnostics",
                 "properties": {
                     "rust-analyzer.diagnostics.previewRustcOutput": {
-                        "markdownDescription": "Whether to show the main part of the rendered rustc output of a diagnostic message.",
+                        "markdownDescription": "是否显示诊断消息渲染后的rustc输出的主要部分。",
                         "default": false,
                         "type": "boolean"
                     },
                     "rust-analyzer.diagnostics.useRustcErrorCode": {
-                        "markdownDescription": "Whether to show diagnostics using the original rustc error code. If this is false, all rustc diagnostics will have the code 'rustc(Click for full compiler diagnostics)'",
+                        "markdownDescription": "是否使用原始的rustc错误代码显示诊断。如果设置为false，所有的rustc诊断将使用代码'rustc(点击查看完整编译器诊断)'",
                         "default": false,
                         "type": "boolean"
                     }
                 }
             },
             {
-                "title": "$generated-start"
-            },
-            {
                 "title": "assist",
                 "properties": {
                     "rust-analyzer.assist.emitMustUse": {
-                        "markdownDescription": "Whether to insert #[must_use] when generating `as_` methods\nfor enum variants.",
+                        "markdownDescription": "为枚举变体生成`as_`方法时是否插入#[must_use]。",
                         "default": false,
                         "type": "boolean"
                     }
@@ -575,7 +572,7 @@
                 "title": "assist",
                 "properties": {
                     "rust-analyzer.assist.expressionFillDefault": {
-                        "markdownDescription": "Placeholder expression to use for missing expressions in assists.",
+                        "markdownDescription": "在辅助功能中用于缺失表达式的占位符表达式。",
                         "default": "todo",
                         "type": "string",
                         "enum": [
@@ -583,8 +580,8 @@
                             "default"
                         ],
                         "enumDescriptions": [
-                            "Fill missing expressions with the `todo` macro",
-                            "Fill missing expressions with reasonable defaults, `new` or `default` constructors."
+                            "用`todo`宏填充缺失的表达式",
+                            "用合理的默认值填充缺失的表达式，例如`new`或`default`构造函数。"
                         ]
                     }
                 }
@@ -593,7 +590,7 @@
                 "title": "assist",
                 "properties": {
                     "rust-analyzer.assist.termSearch.borrowcheck": {
-                        "markdownDescription": "Enable borrow checking for term search code assists. If set to false, also there will be more suggestions, but some of them may not borrow-check.",
+                        "markdownDescription": "为术语搜索代码辅助功能启用借用检查。如果设置为false，也会有更多的建议，但其中一些可能不会进行借用检查。",
                         "default": true,
                         "type": "boolean"
                     }
@@ -603,7 +600,7 @@
                 "title": "assist",
                 "properties": {
                     "rust-analyzer.assist.termSearch.fuel": {
-                        "markdownDescription": "Term search fuel in \"units of work\" for assists (Defaults to 1800).",
+                        "markdownDescription": "辅助功能中的术语搜索燃料工作单位（默认为1800）。",
                         "default": 1800,
                         "type": "integer",
                         "minimum": 0
@@ -614,7 +611,7 @@
                 "title": "cachePriming",
                 "properties": {
                     "rust-analyzer.cachePriming.enable": {
-                        "markdownDescription": "Warm up caches on project load.",
+                        "markdownDescription": "在项目加载时预热缓存。",
                         "default": true,
                         "type": "boolean"
                     }
@@ -624,7 +621,7 @@
                 "title": "cachePriming",
                 "properties": {
                     "rust-analyzer.cachePriming.numThreads": {
-                        "markdownDescription": "How many worker threads to handle priming caches. The default `0` means to pick automatically.",
+                        "markdownDescription": "处理预热缓存的工作线程数量。默认值`0`表示自动选择。",
                         "default": "physical",
                         "anyOf": [
                             {
@@ -639,8 +636,8 @@
                                     "logical"
                                 ],
                                 "enumDescriptions": [
-                                    "Use the number of physical cores",
-                                    "Use the number of logical cores"
+                                    "使用物理核心数量",
+                                    "使用逻辑核心数量"
                                 ]
                             }
                         ]
@@ -651,7 +648,7 @@
                 "title": "cargo",
                 "properties": {
                     "rust-analyzer.cargo.allTargets": {
-                        "markdownDescription": "Pass `--all-targets` to cargo invocation.",
+                        "markdownDescription": "向cargo调用传递`--all-targets`参数。",
                         "default": true,
                         "type": "boolean"
                     }
@@ -661,7 +658,7 @@
                 "title": "cargo",
                 "properties": {
                     "rust-analyzer.cargo.autoreload": {
-                        "markdownDescription": "Automatically refresh project info via `cargo metadata` on\n`Cargo.toml` or `.cargo/config.toml` changes.",
+                        "markdownDescription": "在`Cargo.toml`或`.cargo/config.toml`变更时，通过`cargo metadata`自动刷新项目信息。",
                         "default": true,
                         "type": "boolean"
                     }
@@ -671,7 +668,7 @@
                 "title": "cargo",
                 "properties": {
                     "rust-analyzer.cargo.buildScripts.enable": {
-                        "markdownDescription": "Run build scripts (`build.rs`) for more precise code analysis.",
+                        "markdownDescription": "运行构建脚本（`build.rs`）以进行更精确的代码分析。",
                         "default": true,
                         "type": "boolean"
                     }
@@ -681,7 +678,7 @@
                 "title": "cargo",
                 "properties": {
                     "rust-analyzer.cargo.buildScripts.invocationStrategy": {
-                        "markdownDescription": "Specifies the invocation strategy to use when running the build scripts command.\nIf `per_workspace` is set, the command will be executed for each Rust workspace with the\nworkspace as the working directory.\nIf `once` is set, the command will be executed once with the opened project as the\nworking directory.\nThis config only has an effect when `#rust-analyzer.cargo.buildScripts.overrideCommand#`\nis set.",
+                        "markdownDescription": "指定运行构建脚本命令时使用的调用策略。\n如果设置为`per_workspace`，则命令将为每个Rust工作空间执行，工作空间作为工作目录。\n如果设置为`once`，则命令将执行一次，打开的项目作为工作目录。\n此配置仅在设置`#rust-analyzer.cargo.buildScripts.overrideCommand#`时生效。",
                         "default": "per_workspace",
                         "type": "string",
                         "enum": [
@@ -689,8 +686,8 @@
                             "once"
                         ],
                         "enumDescriptions": [
-                            "The command will be executed for each Rust workspace with the workspace as the working directory.",
-                            "The command will be executed once with the opened project as the working directory."
+                            "命令将为每个Rust工作空间执行，工作空间作为工作目录。",
+                            "命令将执行一次，打开的项目作为工作目录。"
                         ]
                     }
                 }
@@ -699,7 +696,7 @@
                 "title": "cargo",
                 "properties": {
                     "rust-analyzer.cargo.buildScripts.overrideCommand": {
-                        "markdownDescription": "Override the command rust-analyzer uses to run build scripts and\nbuild procedural macros. The command is required to output json\nand should therefore include `--message-format=json` or a similar\noption.\n\nIf there are multiple linked projects/workspaces, this command is invoked for\neach of them, with the working directory being the workspace root\n(i.e., the folder containing the `Cargo.toml`). This can be overwritten\nby changing `#rust-analyzer.cargo.buildScripts.invocationStrategy#`.\n\nBy default, a cargo invocation will be constructed for the configured\ntargets and features, with the following base command line:\n\n```bash\ncargo check --quiet --workspace --message-format=json --all-targets --keep-going\n```\n.",
+                        "markdownDescription": "覆盖rust-analyzer用于运行构建脚本和构建过程宏的命令。命令需要输出json，因此应包含`--message-format=json`或类似的选项。\n\n如果有多个链接的项目/工作空间，此命令将为每个项目/工作空间调用，工作目录为工作空间根目录（即包含`Cargo.toml`的文件夹）。这可以通过更改`#rust-analyzer.cargo.buildScripts.invocationStrategy#`来覆盖。\n\n默认情况下，将为配置的目标和特性构建一个cargo调用，以下为基础命令行：\n\n```bash\ncargo check --quiet --workspace --message-format=json --all-targets --keep-going\n```\n。",
                         "default": null,
                         "type": [
                             "null",
@@ -715,7 +712,7 @@
                 "title": "cargo",
                 "properties": {
                     "rust-analyzer.cargo.buildScripts.rebuildOnSave": {
-                        "markdownDescription": "Rerun proc-macros building/build-scripts running when proc-macro\nor build-script sources change and are saved.",
+                        "markdownDescription": "当过程宏或构建脚本源代码变更并保存时，重新运行过程宏构建/构建脚本。",
                         "default": true,
                         "type": "boolean"
                     }
@@ -725,7 +722,7 @@
                 "title": "cargo",
                 "properties": {
                     "rust-analyzer.cargo.buildScripts.useRustcWrapper": {
-                        "markdownDescription": "Use `RUSTC_WRAPPER=rust-analyzer` when running build scripts to\navoid checking unnecessary things.",
+                        "markdownDescription": "运行构建脚本时使用`RUSTC_WRAPPER=rust-analyzer`以避免检查不必要的事项。",
                         "default": true,
                         "type": "boolean"
                     }
@@ -735,7 +732,7 @@
                 "title": "cargo",
                 "properties": {
                     "rust-analyzer.cargo.cfgs": {
-                        "markdownDescription": "List of cfg options to enable with the given values.",
+                        "markdownDescription": "要启用的cfg选项列表及其给定值。",
                         "default": {
                             "miri": null,
                             "debug_assertions": null
@@ -748,7 +745,7 @@
                 "title": "cargo",
                 "properties": {
                     "rust-analyzer.cargo.extraArgs": {
-                        "markdownDescription": "Extra arguments that are passed to every cargo invocation.",
+                        "markdownDescription": "传递给每个cargo调用的额外参数。",
                         "default": [],
                         "type": "array",
                         "items": {
@@ -761,7 +758,7 @@
                 "title": "cargo",
                 "properties": {
                     "rust-analyzer.cargo.extraEnv": {
-                        "markdownDescription": "Extra environment variables that will be set when running cargo, rustc\nor other commands within the workspace. Useful for setting RUSTFLAGS.",
+                        "markdownDescription": "在工作空间内运行cargo、rustc或其他命令时将设置的额外环境变量。设置RUSTFLAGS很有用。",
                         "default": {},
                         "type": "object"
                     }
@@ -771,7 +768,7 @@
                 "title": "cargo",
                 "properties": {
                     "rust-analyzer.cargo.features": {
-                        "markdownDescription": "List of features to activate.\n\nSet this to `\"all\"` to pass `--all-features` to cargo.",
+                        "markdownDescription": "要激活的功能列表。\n\n设置为`\"all\"`以向cargo传递`--all-features`。",
                         "default": [],
                         "anyOf": [
                             {
@@ -780,7 +777,7 @@
                                     "all"
                                 ],
                                 "enumDescriptions": [
-                                    "Pass `--all-features` to cargo"
+                                    "向cargo传递`--all-features`"
                                 ]
                             },
                             {
@@ -797,7 +794,7 @@
                 "title": "cargo",
                 "properties": {
                     "rust-analyzer.cargo.noDefaultFeatures": {
-                        "markdownDescription": "Whether to pass `--no-default-features` to cargo.",
+                        "markdownDescription": "是否向cargo传递`--no-default-features`。",
                         "default": false,
                         "type": "boolean"
                     }
@@ -807,7 +804,7 @@
                 "title": "cargo",
                 "properties": {
                     "rust-analyzer.cargo.sysroot": {
-                        "markdownDescription": "Relative path to the sysroot, or \"discover\" to try to automatically find it via\n\"rustc --print sysroot\".\n\nUnsetting this disables sysroot loading.\n\nThis option does not take effect until rust-analyzer is restarted.",
+                        "markdownDescription": "相对于sysroot的路径，或设置为\"discover\"以尝试通过\n\"rustc --print sysroot\"自动找到它。\n\n取消设置此选项将禁用sysroot加载。\n\n此选项在rust-analyzer重启后生效。",
                         "default": "discover",
                         "type": [
                             "null",
@@ -820,7 +817,7 @@
                 "title": "cargo",
                 "properties": {
                     "rust-analyzer.cargo.sysrootSrc": {
-                        "markdownDescription": "Relative path to the sysroot library sources. If left unset, this will default to\n`{cargo.sysroot}/lib/rustlib/src/rust/library`.\n\nThis option does not take effect until rust-analyzer is restarted.",
+                        "markdownDescription": "相对于sysroot库源的路径。如果未设置，默认为\n`{cargo.sysroot}/lib/rustlib/src/rust/library`。\n\n此选项在rust-analyzer重启后生效。",
                         "default": null,
                         "type": [
                             "null",
@@ -833,7 +830,7 @@
                 "title": "cargo",
                 "properties": {
                     "rust-analyzer.cargo.target": {
-                        "markdownDescription": "Compilation target override (target triple).",
+                        "markdownDescription": "编译目标覆盖（目标三元组）。",
                         "default": null,
                         "type": [
                             "null",
@@ -846,7 +843,7 @@
                 "title": "cargo",
                 "properties": {
                     "rust-analyzer.cargo.targetDir": {
-                        "markdownDescription": "Optional path to a rust-analyzer specific target directory.\nThis prevents rust-analyzer's `cargo check` and initial build-script and proc-macro\nbuilding from locking the `Cargo.lock` at the expense of duplicating build artifacts.\n\nSet to `true` to use a subdirectory of the existing target directory or\nset to a path relative to the workspace to use that path.",
+                        "markdownDescription": "rust-analyzer特定目标目录的可选路径。\n这可以防止rust-analyzer的`cargo check`和初始构建脚本和过程宏\n构建锁定`Cargo.lock`，代价是复制构建工件。\n\n设置为`true`以使用现有目标目录的子目录，或\n设置为相对于工作空间的路径以使用该路径。",
                         "default": null,
                         "anyOf": [
                             {
@@ -866,7 +863,7 @@
                 "title": "cfg",
                 "properties": {
                     "rust-analyzer.cfg.setTest": {
-                        "markdownDescription": "Set `cfg(test)` for local crates. Defaults to true.",
+                        "markdownDescription": "为本地crates设置`cfg(test)`。默认为true。",
                         "default": true,
                         "type": "boolean"
                     }
@@ -876,7 +873,7 @@
                 "title": "general",
                 "properties": {
                     "rust-analyzer.checkOnSave": {
-                        "markdownDescription": "Run the check command for diagnostics on save.",
+                        "markdownDescription": "保存时运行检查命令以获取诊断。",
                         "default": true,
                         "type": "boolean"
                     }
@@ -886,7 +883,7 @@
                 "title": "check",
                 "properties": {
                     "rust-analyzer.check.allTargets": {
-                        "markdownDescription": "Check all targets and tests (`--all-targets`). Defaults to\n`#rust-analyzer.cargo.allTargets#`.",
+                        "markdownDescription": "检查所有目标和测试（`--all-targets`）。默认为\n`#rust-analyzer.cargo.allTargets#`。",
                         "default": null,
                         "type": [
                             "null",
@@ -899,7 +896,7 @@
                 "title": "check",
                 "properties": {
                     "rust-analyzer.check.command": {
-                        "markdownDescription": "Cargo command to use for `cargo check`.",
+                        "markdownDescription": "用于`cargo check`的Cargo命令。",
                         "default": "check",
                         "type": "string"
                     }
@@ -909,7 +906,7 @@
                 "title": "check",
                 "properties": {
                     "rust-analyzer.check.extraArgs": {
-                        "markdownDescription": "Extra arguments for `cargo check`.",
+                        "markdownDescription": "传递给`cargo check`的额外参数。",
                         "default": [],
                         "type": "array",
                         "items": {
@@ -922,7 +919,7 @@
                 "title": "check",
                 "properties": {
                     "rust-analyzer.check.extraEnv": {
-                        "markdownDescription": "Extra environment variables that will be set when running `cargo check`.\nExtends `#rust-analyzer.cargo.extraEnv#`.",
+                        "markdownDescription": "运行`cargo check`时将设置的额外环境变量。\n扩展`#rust-analyzer.cargo.extraEnv#`。",
                         "default": {},
                         "type": "object"
                     }
@@ -932,7 +929,7 @@
                 "title": "check",
                 "properties": {
                     "rust-analyzer.check.features": {
-                        "markdownDescription": "List of features to activate. Defaults to\n`#rust-analyzer.cargo.features#`.\n\nSet to `\"all\"` to pass `--all-features` to Cargo.",
+                        "markdownDescription": "要激活的功能列表。默认为\n`#rust-analyzer.cargo.features#`。\n\n设置为`\"all\"`以向Cargo传递`--all-features`。",
                         "default": null,
                         "anyOf": [
                             {
@@ -941,7 +938,7 @@
                                     "all"
                                 ],
                                 "enumDescriptions": [
-                                    "Pass `--all-features` to cargo"
+                                    "向cargo传递`--all-features`"
                                 ]
                             },
                             {
@@ -961,7 +958,7 @@
                 "title": "check",
                 "properties": {
                     "rust-analyzer.check.ignore": {
-                        "markdownDescription": "List of `cargo check` (or other command specified in `check.command`) diagnostics to ignore.\n\nFor example for `cargo check`: `dead_code`, `unused_imports`, `unused_variables`,...",
+                        "markdownDescription": "要忽略的`cargo check`（或`check.command`指定的其他命令）诊断列表。\n\n例如对于`cargo check`：`dead_code`、`unused_imports`、`unused_variables`，等等。",
                         "default": [],
                         "type": "array",
                         "items": {
@@ -975,7 +972,7 @@
                 "title": "check",
                 "properties": {
                     "rust-analyzer.check.invocationStrategy": {
-                        "markdownDescription": "Specifies the invocation strategy to use when running the check command.\nIf `per_workspace` is set, the command will be executed for each workspace.\nIf `once` is set, the command will be executed once.\nThis config only has an effect when `#rust-analyzer.check.overrideCommand#`\nis set.",
+                        "markdownDescription": "指定运行检查命令时使用的调用策略。\n如果设置为`per_workspace`，则命令将为每个工作空间执行。\n如果设置为`once`，则命令将执行一次。\n此配置仅在设置`#rust-analyzer.check.overrideCommand#`时生效。",
                         "default": "per_workspace",
                         "type": "string",
                         "enum": [
@@ -983,8 +980,8 @@
                             "once"
                         ],
                         "enumDescriptions": [
-                            "The command will be executed for each Rust workspace with the workspace as the working directory.",
-                            "The command will be executed once with the opened project as the working directory."
+                            "命令将为每个Rust工作空间执行，工作空间作为工作目录。",
+                            "命令将执行一次，打开的项目作为工作目录。"
                         ]
                     }
                 }
@@ -993,7 +990,7 @@
                 "title": "check",
                 "properties": {
                     "rust-analyzer.check.noDefaultFeatures": {
-                        "markdownDescription": "Whether to pass `--no-default-features` to Cargo. Defaults to\n`#rust-analyzer.cargo.noDefaultFeatures#`.",
+                        "markdownDescription": "是否向Cargo传递`--no-default-features`。默认为\n`#rust-analyzer.cargo.noDefaultFeatures#`。",
                         "default": null,
                         "type": [
                             "null",
@@ -1006,7 +1003,7 @@
                 "title": "check",
                 "properties": {
                     "rust-analyzer.check.overrideCommand": {
-                        "markdownDescription": "Override the command rust-analyzer uses instead of `cargo check` for\ndiagnostics on save. The command is required to output json and\nshould therefore include `--message-format=json` or a similar option\n(if your client supports the `colorDiagnosticOutput` experimental\ncapability, you can use `--message-format=json-diagnostic-rendered-ansi`).\n\nIf you're changing this because you're using some tool wrapping\nCargo, you might also want to change\n`#rust-analyzer.cargo.buildScripts.overrideCommand#`.\n\nIf there are multiple linked projects/workspaces, this command is invoked for\neach of them, with the working directory being the workspace root\n(i.e., the folder containing the `Cargo.toml`). This can be overwritten\nby changing `#rust-analyzer.check.invocationStrategy#`.\n\nIf `$saved_file` is part of the command, rust-analyzer will pass\nthe absolute path of the saved file to the provided command. This is\nintended to be used with non-Cargo build systems.\nNote that `$saved_file` is experimental and may be removed in the future.\n\nAn example command would be:\n\n```bash\ncargo check --workspace --message-format=json --all-targets\n```\n.",
+                        "markdownDescription": "覆盖rust-analyzer用于保存时诊断的命令，而不是使用`cargo check`。命令需要输出json，\n因此应包含`--message-format=json`或类似选项\n（如果您的客户端支持`colorDiagnosticOutput`实验功能，您可以使用`--message-format=json-diagnostic-rendered-ansi`）。\n\n如果您因为使用某些包装Cargo的工具而更改此设置，您可能还需要更改\n`#rust-analyzer.cargo.buildScripts.overrideCommand#`。\n\n如果有多个链接的项目/工作空间，此命令将为每个项目/工作空间调用，工作目录为工作空间根目录\n（即包含`Cargo.toml`的文件夹）。这可以通过更改`#rust-analyzer.check.invocationStrategy#`来覆盖。\n\n如果命令中包含`$saved_file`，rust-analyzer将传递保存文件的绝对路径给提供的命令。这是\n用于非Cargo构建系统。\n请注意`$saved_file`是实验性的，未来可能会被移除。\n\n一个示例命令可能是：\n\n```bash\ncargo check --workspace --message-format=json --all-targets\n```\n。",
                         "default": null,
                         "type": [
                             "null",
@@ -1022,7 +1019,7 @@
                 "title": "check",
                 "properties": {
                     "rust-analyzer.check.targets": {
-                        "markdownDescription": "Check for specific targets. Defaults to `#rust-analyzer.cargo.target#` if empty.\n\nCan be a single target, e.g. `\"x86_64-unknown-linux-gnu\"` or a list of targets, e.g.\n`[\"aarch64-apple-darwin\", \"x86_64-apple-darwin\"]`.\n\nAliased as `\"checkOnSave.targets\"`.",
+                        "markdownDescription": "检查特定目标。如果为空，默认为`#rust-analyzer.cargo.target#`。\n\n可以是单个目标，例如`\"x86_64-unknown-linux-gnu\"`，或目标列表，例如\n`[\"aarch64-apple-darwin\", \"x86_64-apple-darwin\"]`。\n\n别名为`\"checkOnSave.targets\"`。",
                         "default": null,
                         "anyOf": [
                             {
@@ -1045,7 +1042,7 @@
                 "title": "check",
                 "properties": {
                     "rust-analyzer.check.workspace": {
-                        "markdownDescription": "Whether `--workspace` should be passed to `cargo check`.\nIf false, `-p <package>` will be passed instead.",
+                        "markdownDescription": "是否向`cargo check`传递`--workspace`。\n如果为false，将传递`-p <package>`代替。",
                         "default": true,
                         "type": "boolean"
                     }
@@ -1055,7 +1052,7 @@
                 "title": "completion",
                 "properties": {
                     "rust-analyzer.completion.addSemicolonToUnit": {
-                        "markdownDescription": "Whether to automatically add a semicolon when completing unit-returning functions.\n\nIn `match` arms it completes a comma instead.",
+                        "markdownDescription": "在完成返回单元值的函数时是否自动添加分号。\n\n在`match`臂中，它将改为完成逗号。",
                         "default": true,
                         "type": "boolean"
                     }
@@ -1065,7 +1062,7 @@
                 "title": "completion",
                 "properties": {
                     "rust-analyzer.completion.autoimport.enable": {
-                        "markdownDescription": "Toggles the additional completions that automatically add imports when completed.\nNote that your client must specify the `additionalTextEdits` LSP client capability to truly have this feature enabled.",
+                        "markdownDescription": "切换额外的补全功能，这些功能在完成时自动添加导入。\n请注意，您的客户端必须指定`additionalTextEdits` LSP客户端功能，才能真正启用此功能。",
                         "default": true,
                         "type": "boolean"
                     }
@@ -1075,7 +1072,7 @@
                 "title": "completion",
                 "properties": {
                     "rust-analyzer.completion.autoself.enable": {
-                        "markdownDescription": "Toggles the additional completions that automatically show method calls and field accesses\nwith `self` prefixed to them when inside a method.",
+                        "markdownDescription": "切换额外的补全功能，这些功能在方法内部自动显示带有`self`前缀的方法调用和字段访问。",
                         "default": true,
                         "type": "boolean"
                     }
@@ -1085,7 +1082,7 @@
                 "title": "completion",
                 "properties": {
                     "rust-analyzer.completion.callable.snippets": {
-                        "markdownDescription": "Whether to add parenthesis and argument snippets when completing function.",
+                        "markdownDescription": "在完成函数时是否添加括号和参数片段。",
                         "default": "fill_arguments",
                         "type": "string",
                         "enum": [
@@ -1094,9 +1091,9 @@
                             "none"
                         ],
                         "enumDescriptions": [
-                            "Add call parentheses and pre-fill arguments.",
-                            "Add call parentheses.",
-                            "Do no snippet completions for callables."
+                            "添加调用括号并预填充参数。",
+                            "添加调用括号。",
+                            "不对可调用项进行片段补全。"
                         ]
                     }
                 }
@@ -1105,7 +1102,7 @@
                 "title": "completion",
                 "properties": {
                     "rust-analyzer.completion.fullFunctionSignatures.enable": {
-                        "markdownDescription": "Whether to show full function/method signatures in completion docs.",
+                        "markdownDescription": "是否在补全文档中显示完整的函数/方法签名。",
                         "default": false,
                         "type": "boolean"
                     }
@@ -1115,7 +1112,7 @@
                 "title": "completion",
                 "properties": {
                     "rust-analyzer.completion.hideDeprecated": {
-                        "markdownDescription": "Whether to omit deprecated items from autocompletion. By default they are marked as deprecated but not hidden.",
+                        "markdownDescription": "是否从自动补全中省略已弃用的项。默认情况下，它们被标记为已弃用，但不会被隐藏。",
                         "default": false,
                         "type": "boolean"
                     }
@@ -1125,7 +1122,7 @@
                 "title": "completion",
                 "properties": {
                     "rust-analyzer.completion.limit": {
-                        "markdownDescription": "Maximum number of completions to return. If `None`, the limit is infinite.",
+                        "markdownDescription": "要返回的补全的最大数量。如果为`None`，则限制为无限。",
                         "default": null,
                         "type": [
                             "null",
@@ -1139,7 +1136,7 @@
                 "title": "completion",
                 "properties": {
                     "rust-analyzer.completion.postfix.enable": {
-                        "markdownDescription": "Whether to show postfix snippets like `dbg`, `if`, `not`, etc.",
+                        "markdownDescription": "是否显示后缀片段，如`dbg`、`if`、`not`等。",
                         "default": true,
                         "type": "boolean"
                     }
@@ -1149,55 +1146,55 @@
                 "title": "completion",
                 "properties": {
                     "rust-analyzer.completion.privateEditable.enable": {
-                        "markdownDescription": "Enables completions of private items and fields that are defined in the current workspace even if they are not visible at the current position.",
+                        "markdownDescription": "启用在当前工作空间中定义的私有项和字段的补全，即使它们在当前位置不可见。",
                         "default": false,
                         "type": "boolean"
                     }
                 }
             },
-            {
+                        {
                 "title": "completion",
                 "properties": {
                     "rust-analyzer.completion.snippets.custom": {
-                        "markdownDescription": "Custom completion snippets.",
+                        "markdownDescription": "自定义完成片段。",
                         "default": {
                             "Ok": {
                                 "postfix": "ok",
                                 "body": "Ok(${receiver})",
-                                "description": "Wrap the expression in a `Result::Ok`",
+                                "description": "将表达式包装在 `Result::Ok` 中",
                                 "scope": "expr"
                             },
                             "Box::pin": {
                                 "postfix": "pinbox",
                                 "body": "Box::pin(${receiver})",
                                 "requires": "std::boxed::Box",
-                                "description": "Put the expression into a pinned `Box`",
+                                "description": "将表达式放入固定 `Box` 中",
                                 "scope": "expr"
                             },
                             "Arc::new": {
                                 "postfix": "arc",
                                 "body": "Arc::new(${receiver})",
                                 "requires": "std::sync::Arc",
-                                "description": "Put the expression into an `Arc`",
+                                "description": "将表达式放入 `Arc` 中",
                                 "scope": "expr"
                             },
                             "Some": {
                                 "postfix": "some",
                                 "body": "Some(${receiver})",
-                                "description": "Wrap the expression in an `Option::Some`",
+                                "description": "将表达式包装在 `Option::Some` 中",
                                 "scope": "expr"
                             },
                             "Err": {
                                 "postfix": "err",
                                 "body": "Err(${receiver})",
-                                "description": "Wrap the expression in a `Result::Err`",
+                                "description": "将表达式包装在 `Result::Err` 中",
                                 "scope": "expr"
                             },
                             "Rc::new": {
                                 "postfix": "rc",
                                 "body": "Rc::new(${receiver})",
                                 "requires": "std::rc::Rc",
-                                "description": "Put the expression into an `Rc`",
+                                "description": "将表达式放入 `Rc` 中",
                                 "scope": "expr"
                             }
                         },
@@ -1209,7 +1206,7 @@
                 "title": "completion",
                 "properties": {
                     "rust-analyzer.completion.termSearch.enable": {
-                        "markdownDescription": "Whether to enable term search based snippets like `Some(foo.bar().baz())`.",
+                        "markdownDescription": "是否启用基于术语搜索的片段，如 `Some(foo.bar().baz())`。",
                         "default": false,
                         "type": "boolean"
                     }
@@ -1219,7 +1216,7 @@
                 "title": "completion",
                 "properties": {
                     "rust-analyzer.completion.termSearch.fuel": {
-                        "markdownDescription": "Term search fuel in \"units of work\" for autocompletion (Defaults to 1000).",
+                        "markdownDescription": "自动补全的术语搜索燃料工作单位（默认为1000）。",
                         "default": 1000,
                         "type": "integer",
                         "minimum": 0
@@ -1230,7 +1227,7 @@
                 "title": "diagnostics",
                 "properties": {
                     "rust-analyzer.diagnostics.disabled": {
-                        "markdownDescription": "List of rust-analyzer diagnostics to disable.",
+                        "markdownDescription": "要禁用的rust-analyzer诊断列表。",
                         "default": [],
                         "type": "array",
                         "items": {
@@ -1244,7 +1241,7 @@
                 "title": "diagnostics",
                 "properties": {
                     "rust-analyzer.diagnostics.enable": {
-                        "markdownDescription": "Whether to show native rust-analyzer diagnostics.",
+                        "markdownDescription": "是否显示原生rust-analyzer诊断。",
                         "default": true,
                         "type": "boolean"
                     }
@@ -1254,7 +1251,7 @@
                 "title": "diagnostics",
                 "properties": {
                     "rust-analyzer.diagnostics.experimental.enable": {
-                        "markdownDescription": "Whether to show experimental rust-analyzer diagnostics that might\nhave more false positives than usual.",
+                        "markdownDescription": "是否显示可能比平常有更多的误报的实验性rust-analyzer诊断。",
                         "default": false,
                         "type": "boolean"
                     }
@@ -1264,7 +1261,7 @@
                 "title": "diagnostics",
                 "properties": {
                     "rust-analyzer.diagnostics.remapPrefix": {
-                        "markdownDescription": "Map of prefixes to be substituted when parsing diagnostic file paths.\nThis should be the reverse mapping of what is passed to `rustc` as `--remap-path-prefix`.",
+                        "markdownDescription": "解析诊断文件路径时需要替换的前缀映射。\n这应该是传递给 `rustc` 的 `--remap-path-prefix` 的反向映射。",
                         "default": {},
                         "type": "object"
                     }
@@ -1274,7 +1271,7 @@
                 "title": "diagnostics",
                 "properties": {
                     "rust-analyzer.diagnostics.styleLints.enable": {
-                        "markdownDescription": "Whether to run additional style lints.",
+                        "markdownDescription": "是否运行额外的风格lints。",
                         "default": false,
                         "type": "boolean"
                     }
@@ -1284,7 +1281,7 @@
                 "title": "diagnostics",
                 "properties": {
                     "rust-analyzer.diagnostics.warningsAsHint": {
-                        "markdownDescription": "List of warnings that should be displayed with hint severity.\n\nThe warnings will be indicated by faded text or three dots in code\nand will not show up in the `Problems Panel`.",
+                        "markdownDescription": "应以提示严重性显示的警告列表。\n\n这些警告将在代码中以褪色文本或三个点表示\n并且不会出现在`Problems Panel`中。",
                         "default": [],
                         "type": "array",
                         "items": {
@@ -1297,7 +1294,7 @@
                 "title": "diagnostics",
                 "properties": {
                     "rust-analyzer.diagnostics.warningsAsInfo": {
-                        "markdownDescription": "List of warnings that should be displayed with info severity.\n\nThe warnings will be indicated by a blue squiggly underline in code\nand a blue icon in the `Problems Panel`.",
+                        "markdownDescription": "应以信息严重性显示的警告列表。\n\n这些警告将在代码中以蓝色波浪下划线表示\n并且在`Problems Panel`中以蓝色图标显示。",
                         "default": [],
                         "type": "array",
                         "items": {
@@ -1310,7 +1307,7 @@
                 "title": "files",
                 "properties": {
                     "rust-analyzer.files.excludeDirs": {
-                        "markdownDescription": "These directories will be ignored by rust-analyzer. They are\nrelative to the workspace root, and globs are not supported. You may\nalso need to add the folders to Code's `files.watcherExclude`.",
+                        "markdownDescription": "这些目录将被rust-analyzer忽略。它们相对于工作空间根目录，不支持通配符。您可能\n还需要将这些文件夹添加到Code的`files.watcherExclude`。",
                         "default": [],
                         "type": "array",
                         "items": {
@@ -1323,7 +1320,7 @@
                 "title": "files",
                 "properties": {
                     "rust-analyzer.files.watcher": {
-                        "markdownDescription": "Controls file watching implementation.",
+                        "markdownDescription": "控制文件监视实现。",
                         "default": "client",
                         "type": "string",
                         "enum": [
@@ -1331,8 +1328,8 @@
                             "server"
                         ],
                         "enumDescriptions": [
-                            "Use the client (editor) to watch files for changes",
-                            "Use server-side file watching"
+                            "使用客户端（编辑器）监视文件更改",
+                            "使用服务器端文件监视"
                         ]
                     }
                 }
@@ -1341,7 +1338,7 @@
                 "title": "highlightRelated",
                 "properties": {
                     "rust-analyzer.highlightRelated.breakPoints.enable": {
-                        "markdownDescription": "Enables highlighting of related references while the cursor is on `break`, `loop`, `while`, or `for` keywords.",
+                        "markdownDescription": "启用在光标位于`break`、`loop`、`while`或`for`关键字时高亮显示相关引用。",
                         "default": true,
                         "type": "boolean"
                     }
@@ -1351,7 +1348,7 @@
                 "title": "highlightRelated",
                 "properties": {
                     "rust-analyzer.highlightRelated.closureCaptures.enable": {
-                        "markdownDescription": "Enables highlighting of all captures of a closure while the cursor is on the `|` or move keyword of a closure.",
+                        "markdownDescription": "启用在光标位于闭包的`|`或移动关键字时高亮显示闭包的所有捕获。",
                         "default": true,
                         "type": "boolean"
                     }
@@ -1361,7 +1358,7 @@
                 "title": "highlightRelated",
                 "properties": {
                     "rust-analyzer.highlightRelated.exitPoints.enable": {
-                        "markdownDescription": "Enables highlighting of all exit points while the cursor is on any `return`, `?`, `fn`, or return type arrow (`->`).",
+                        "markdownDescription": "启用在光标位于任何`return`、`?`、`fn`或返回类型箭头（`->`）时高亮显示所有退出点。",
                         "default": true,
                         "type": "boolean"
                     }
@@ -1371,7 +1368,7 @@
                 "title": "highlightRelated",
                 "properties": {
                     "rust-analyzer.highlightRelated.references.enable": {
-                        "markdownDescription": "Enables highlighting of related references while the cursor is on any identifier.",
+                        "markdownDescription": "启用在光标位于任何标识符时高亮显示相关引用。",
                         "default": true,
                         "type": "boolean"
                     }
@@ -1381,17 +1378,17 @@
                 "title": "highlightRelated",
                 "properties": {
                     "rust-analyzer.highlightRelated.yieldPoints.enable": {
-                        "markdownDescription": "Enables highlighting of all break points for a loop or block context while the cursor is on any `async` or `await` keywords.",
+                        "markdownDescription": "启用在光标位于任何`async`或`await`关键字时高亮显示循环或块上下文的所有断点。",
                         "default": true,
                         "type": "boolean"
                     }
                 }
             },
-            {
+                        {
                 "title": "hover",
                 "properties": {
                     "rust-analyzer.hover.actions.debug.enable": {
-                        "markdownDescription": "Whether to show `Debug` action. Only applies when\n`#rust-analyzer.hover.actions.enable#` is set.",
+                        "markdownDescription": "是否显示`Debug`操作。仅在设置`#rust-analyzer.hover.actions.enable#`时适用。",
                         "default": true,
                         "type": "boolean"
                     }
@@ -1401,7 +1398,7 @@
                 "title": "hover",
                 "properties": {
                     "rust-analyzer.hover.actions.enable": {
-                        "markdownDescription": "Whether to show HoverActions in Rust files.",
+                        "markdownDescription": "是否在Rust文件中显示HoverActions。",
                         "default": true,
                         "type": "boolean"
                     }
@@ -1411,7 +1408,7 @@
                 "title": "hover",
                 "properties": {
                     "rust-analyzer.hover.actions.gotoTypeDef.enable": {
-                        "markdownDescription": "Whether to show `Go to Type Definition` action. Only applies when\n`#rust-analyzer.hover.actions.enable#` is set.",
+                        "markdownDescription": "是否显示`Go to Type Definition`操作。仅在设置`#rust-analyzer.hover.actions.enable#`时适用。",
                         "default": true,
                         "type": "boolean"
                     }
@@ -1421,7 +1418,7 @@
                 "title": "hover",
                 "properties": {
                     "rust-analyzer.hover.actions.implementations.enable": {
-                        "markdownDescription": "Whether to show `Implementations` action. Only applies when\n`#rust-analyzer.hover.actions.enable#` is set.",
+                        "markdownDescription": "是否显示`Implementations`操作。仅在设置`#rust-analyzer.hover.actions.enable#`时适用。",
                         "default": true,
                         "type": "boolean"
                     }
@@ -1431,7 +1428,7 @@
                 "title": "hover",
                 "properties": {
                     "rust-analyzer.hover.actions.references.enable": {
-                        "markdownDescription": "Whether to show `References` action. Only applies when\n`#rust-analyzer.hover.actions.enable#` is set.",
+                        "markdownDescription": "是否显示`References`操作。仅在设置`#rust-analyzer.hover.actions.enable#`时适用。",
                         "default": false,
                         "type": "boolean"
                     }
@@ -1441,7 +1438,7 @@
                 "title": "hover",
                 "properties": {
                     "rust-analyzer.hover.actions.run.enable": {
-                        "markdownDescription": "Whether to show `Run` action. Only applies when\n`#rust-analyzer.hover.actions.enable#` is set.",
+                        "markdownDescription": "是否显示`Run`操作。仅在设置`#rust-analyzer.hover.actions.enable#`时适用。",
                         "default": true,
                         "type": "boolean"
                     }
@@ -1451,7 +1448,7 @@
                 "title": "hover",
                 "properties": {
                     "rust-analyzer.hover.documentation.enable": {
-                        "markdownDescription": "Whether to show documentation on hover.",
+                        "markdownDescription": "是否在悬停时显示文档。",
                         "default": true,
                         "type": "boolean"
                     }
@@ -1461,7 +1458,7 @@
                 "title": "hover",
                 "properties": {
                     "rust-analyzer.hover.documentation.keywords.enable": {
-                        "markdownDescription": "Whether to show keyword hover popups. Only applies when\n`#rust-analyzer.hover.documentation.enable#` is set.",
+                        "markdownDescription": "是否显示关键字悬停弹窗。仅在设置`#rust-analyzer.hover.documentation.enable#`时适用。",
                         "default": true,
                         "type": "boolean"
                     }
@@ -1471,7 +1468,7 @@
                 "title": "hover",
                 "properties": {
                     "rust-analyzer.hover.links.enable": {
-                        "markdownDescription": "Use markdown syntax for links on hover.",
+                        "markdownDescription": "在悬停时使用Markdown语法显示链接。",
                         "default": true,
                         "type": "boolean"
                     }
@@ -1481,7 +1478,7 @@
                 "title": "hover",
                 "properties": {
                     "rust-analyzer.hover.memoryLayout.alignment": {
-                        "markdownDescription": "How to render the align information in a memory layout hover.",
+                        "markdownDescription": "在内存布局悬停中如何呈现对齐信息。",
                         "default": "hexadecimal",
                         "anyOf": [
                             {
@@ -1495,9 +1492,9 @@
                                     "hexadecimal"
                                 ],
                                 "enumDescriptions": [
-                                    "Render as 12 (0xC)",
-                                    "Render as 12",
-                                    "Render as 0xC"
+                                    "以12 (0xC)的形式呈现",
+                                    "以12的形式呈现",
+                                    "以0xC的形式呈现"
                                 ]
                             }
                         ]
@@ -1508,7 +1505,7 @@
                 "title": "hover",
                 "properties": {
                     "rust-analyzer.hover.memoryLayout.enable": {
-                        "markdownDescription": "Whether to show memory layout data on hover.",
+                        "markdownDescription": "是否在悬停时显示内存布局数据。",
                         "default": true,
                         "type": "boolean"
                     }
@@ -1518,7 +1515,7 @@
                 "title": "hover",
                 "properties": {
                     "rust-analyzer.hover.memoryLayout.niches": {
-                        "markdownDescription": "How to render the niche information in a memory layout hover.",
+                        "markdownDescription": "在内存布局悬停中如何呈现细节信息。",
                         "default": false,
                         "type": [
                             "null",
@@ -1531,7 +1528,7 @@
                 "title": "hover",
                 "properties": {
                     "rust-analyzer.hover.memoryLayout.offset": {
-                        "markdownDescription": "How to render the offset information in a memory layout hover.",
+                        "markdownDescription": "在内存布局悬停中如何呈现偏移信息。",
                         "default": "hexadecimal",
                         "anyOf": [
                             {
@@ -1545,9 +1542,9 @@
                                     "hexadecimal"
                                 ],
                                 "enumDescriptions": [
-                                    "Render as 12 (0xC)",
-                                    "Render as 12",
-                                    "Render as 0xC"
+                                    "以12 (0xC)的形式呈现",
+                                    "以12的形式呈现",
+                                    "以0xC的形式呈现"
                                 ]
                             }
                         ]
@@ -1558,7 +1555,7 @@
                 "title": "hover",
                 "properties": {
                     "rust-analyzer.hover.memoryLayout.size": {
-                        "markdownDescription": "How to render the size information in a memory layout hover.",
+                        "markdownDescription": "在内存布局悬停中如何呈现大小信息。",
                         "default": "both",
                         "anyOf": [
                             {
@@ -1572,9 +1569,9 @@
                                     "hexadecimal"
                                 ],
                                 "enumDescriptions": [
-                                    "Render as 12 (0xC)",
-                                    "Render as 12",
-                                    "Render as 0xC"
+                                    "以12 (0xC)的形式呈现",
+                                    "以12的形式呈现",
+                                    "以0xC的形式呈现"
                                 ]
                             }
                         ]
@@ -1585,7 +1582,7 @@
                 "title": "hover",
                 "properties": {
                     "rust-analyzer.hover.show.enumVariants": {
-                        "markdownDescription": "How many variants of an enum to display when hovering on. Show none if empty.",
+                        "markdownDescription": "在悬停时显示枚举的变体数量。如果为空，则不显示。",
                         "default": 5,
                         "type": [
                             "null",
@@ -1599,7 +1596,7 @@
                 "title": "hover",
                 "properties": {
                     "rust-analyzer.hover.show.fields": {
-                        "markdownDescription": "How many fields of a struct, variant or union to display when hovering on. Show none if empty.",
+                        "markdownDescription": "在悬停时显示结构体、变体或联合的字段数量。如果为空，则不显示。",
                         "default": 5,
                         "type": [
                             "null",
@@ -1613,7 +1610,7 @@
                 "title": "hover",
                 "properties": {
                     "rust-analyzer.hover.show.traitAssocItems": {
-                        "markdownDescription": "How many associated items of a trait to display when hovering a trait.",
+                        "markdownDescription": "在悬停时显示特质的关联项数量。",
                         "default": null,
                         "type": [
                             "null",
@@ -1623,11 +1620,11 @@
                     }
                 }
             },
-            {
+                        {
                 "title": "imports",
                 "properties": {
                     "rust-analyzer.imports.granularity.enforce": {
-                        "markdownDescription": "Whether to enforce the import granularity setting for all files. If set to false rust-analyzer will try to keep import styles consistent per file.",
+                        "markdownDescription": "是否对所有文件强制执行导入粒度设置。如果设置为false，rust-analyzer将尝试保持每个文件的导入风格一致。",
                         "default": false,
                         "type": "boolean"
                     }
@@ -1637,7 +1634,7 @@
                 "title": "imports",
                 "properties": {
                     "rust-analyzer.imports.granularity.group": {
-                        "markdownDescription": "How imports should be grouped into use statements.",
+                        "markdownDescription": "应该如何将导入分组到use语句中。",
                         "default": "crate",
                         "type": "string",
                         "enum": [
@@ -1648,11 +1645,11 @@
                             "one"
                         ],
                         "enumDescriptions": [
-                            "Do not change the granularity of any imports and preserve the original structure written by the developer.",
-                            "Merge imports from the same crate into a single use statement. Conversely, imports from different crates are split into separate statements.",
-                            "Merge imports from the same module into a single use statement. Conversely, imports from different modules are split into separate statements.",
-                            "Flatten imports so that each has its own use statement.",
-                            "Merge all imports into a single use statement as long as they have the same visibility and attributes."
+                            "不改变任何导入的粒度，并保留开发者原始编写的结构。",
+                            "将来自同一crate的导入合并为单个use语句。相反，来自不同crate的导入被分成单独的语句。",
+                            "将来自同一模块的导入合并为单个use语句。相反，来自不同模块的导入被分成单独的语句。",
+                            "将导入展平，使得每个导入都有自己的use语句。",
+                            "只要它们具有相同的可见性和属性，就将所有导入合并为单个use语句。"
                         ]
                     }
                 }
@@ -1661,7 +1658,7 @@
                 "title": "imports",
                 "properties": {
                     "rust-analyzer.imports.group.enable": {
-                        "markdownDescription": "Group inserted imports by the [following order](https://rust-analyzer.github.io/manual.html#auto-import). Groups are separated by newlines.",
+                        "markdownDescription": "根据[以下顺序](https://rust-analyzer.github.io/manual.html#auto-import)对插入的导入进行分组。组之间用新行分隔。",
                         "default": true,
                         "type": "boolean"
                     }
@@ -1671,7 +1668,7 @@
                 "title": "imports",
                 "properties": {
                     "rust-analyzer.imports.merge.glob": {
-                        "markdownDescription": "Whether to allow import insertion to merge new imports into single path glob imports like `use std::fmt::*;`.",
+                        "markdownDescription": "是否允许导入插入将新导入合并到单个路径全局导入中，如`use std::fmt::*;`。",
                         "default": true,
                         "type": "boolean"
                     }
@@ -1681,7 +1678,7 @@
                 "title": "imports",
                 "properties": {
                     "rust-analyzer.imports.preferNoStd": {
-                        "markdownDescription": "Prefer to unconditionally use imports of the core and alloc crate, over the std crate.",
+                        "markdownDescription": "优先无条件地使用核心和alloc crate的导入，而不是std crate。",
                         "default": false,
                         "type": "boolean"
                     }
@@ -1691,7 +1688,7 @@
                 "title": "imports",
                 "properties": {
                     "rust-analyzer.imports.preferPrelude": {
-                        "markdownDescription": "Whether to prefer import paths containing a `prelude` module.",
+                        "markdownDescription": "是否优先选择包含`prelude`模块的导入路径。",
                         "default": false,
                         "type": "boolean"
                     }
@@ -1701,7 +1698,7 @@
                 "title": "imports",
                 "properties": {
                     "rust-analyzer.imports.prefix": {
-                        "markdownDescription": "The path structure for newly inserted paths to use.",
+                        "markdownDescription": "新插入路径使用的路径结构。",
                         "default": "plain",
                         "type": "string",
                         "enum": [
@@ -1710,9 +1707,9 @@
                             "crate"
                         ],
                         "enumDescriptions": [
-                            "Insert import paths relative to the current module, using up to one `super` prefix if the parent module contains the requested item.",
-                            "Insert import paths relative to the current module, using up to one `super` prefix if the parent module contains the requested item. Prefixes `self` in front of the path if it starts with a module.",
-                            "Force import paths to be absolute by always starting them with `crate` or the extern crate name they come from."
+                            "相对于当前模块插入导入路径，如果父模块包含请求的项，则使用最多一个`super`前缀。",
+                            "相对于当前模块插入导入路径，如果父模块包含请求的项，则使用最多一个`super`前缀。如果路径以模块开头，则在路径前加上`self`前缀。",
+                            "通过始终以`crate`或它们来自的外部crate名称开头，强制导入路径为绝对路径。"
                         ]
                     }
                 }
@@ -1721,7 +1718,7 @@
                 "title": "imports",
                 "properties": {
                     "rust-analyzer.imports.prefixExternPrelude": {
-                        "markdownDescription": "Whether to prefix external (including std, core) crate imports with `::`. e.g. \"use ::std::io::Read;\".",
+                        "markdownDescription": "是否用`::`前缀外部（包括std、core）crate导入。例如\"use ::std::io::Read;\"。",
                         "default": false,
                         "type": "boolean"
                     }
@@ -1731,7 +1728,7 @@
                 "title": "inlayHints",
                 "properties": {
                     "rust-analyzer.inlayHints.bindingModeHints.enable": {
-                        "markdownDescription": "Whether to show inlay type hints for binding modes.",
+                        "markdownDescription": "是否显示绑定模式的内联类型提示。",
                         "default": false,
                         "type": "boolean"
                     }
@@ -1741,7 +1738,7 @@
                 "title": "inlayHints",
                 "properties": {
                     "rust-analyzer.inlayHints.chainingHints.enable": {
-                        "markdownDescription": "Whether to show inlay type hints for method chains.",
+                        "markdownDescription": "是否显示方法链的内联类型提示。",
                         "default": true,
                         "type": "boolean"
                     }
@@ -1751,7 +1748,7 @@
                 "title": "inlayHints",
                 "properties": {
                     "rust-analyzer.inlayHints.closingBraceHints.enable": {
-                        "markdownDescription": "Whether to show inlay hints after a closing `}` to indicate what item it belongs to.",
+                        "markdownDescription": "是否在闭合的`}`后显示内联提示，以指示它属于哪个项。",
                         "default": true,
                         "type": "boolean"
                     }
@@ -1761,7 +1758,7 @@
                 "title": "inlayHints",
                 "properties": {
                     "rust-analyzer.inlayHints.closingBraceHints.minLines": {
-                        "markdownDescription": "Minimum number of lines required before the `}` until the hint is shown (set to 0 or 1\nto always show them).",
+                        "markdownDescription": "在`}`之前所需的最少行数，直到显示提示（设置为0或1以始终显示它们）。",
                         "default": 25,
                         "type": "integer",
                         "minimum": 0
@@ -1772,7 +1769,7 @@
                 "title": "inlayHints",
                 "properties": {
                     "rust-analyzer.inlayHints.closureCaptureHints.enable": {
-                        "markdownDescription": "Whether to show inlay hints for closure captures.",
+                        "markdownDescription": "是否显示闭包捕获的内联提示。",
                         "default": false,
                         "type": "boolean"
                     }
@@ -1782,7 +1779,7 @@
                 "title": "inlayHints",
                 "properties": {
                     "rust-analyzer.inlayHints.closureReturnTypeHints.enable": {
-                        "markdownDescription": "Whether to show inlay type hints for return types of closures.",
+                        "markdownDescription": "是否显示闭包返回类型的内联类型提示。",
                         "default": "never",
                         "type": "string",
                         "enum": [
@@ -1791,9 +1788,9 @@
                             "with_block"
                         ],
                         "enumDescriptions": [
-                            "Always show type hints for return types of closures.",
-                            "Never show type hints for return types of closures.",
-                            "Only show type hints for return types of closures with blocks."
+                            "始终显示闭包返回类型的类型提示。",
+                            "从不显示闭包返回类型的类型提示。",
+                            "仅当闭包具有块时显示闭包返回类型的类型提示。"
                         ]
                     }
                 }
@@ -1802,7 +1799,7 @@
                 "title": "inlayHints",
                 "properties": {
                     "rust-analyzer.inlayHints.closureStyle": {
-                        "markdownDescription": "Closure notation in type and chaining inlay hints.",
+                        "markdownDescription": "类型和链式内联提示中的闭包表示法。",
                         "default": "impl_fn",
                         "type": "string",
                         "enum": [
@@ -1814,8 +1811,8 @@
                         "enumDescriptions": [
                             "`impl_fn`: `impl FnMut(i32, u64) -> i8`",
                             "`rust_analyzer`: `|i32, u64| -> i8`",
-                            "`with_id`: `{closure#14352}`, where that id is the unique number of the closure in r-a internals",
-                            "`hide`: Shows `...` for every closure type"
+                            "`with_id`: `{closure#14352}`, 其中该id是r-a内部闭包的唯一编号",
+                            "`hide`: 对于每个闭包类型显示`...`"
                         ]
                     }
                 }
@@ -1824,7 +1821,7 @@
                 "title": "inlayHints",
                 "properties": {
                     "rust-analyzer.inlayHints.discriminantHints.enable": {
-                        "markdownDescription": "Whether to show enum variant discriminant hints.",
+                        "markdownDescription": "是否显示枚举变体的区分符提示。",
                         "default": "never",
                         "type": "string",
                         "enum": [
@@ -1833,18 +1830,18 @@
                             "fieldless"
                         ],
                         "enumDescriptions": [
-                            "Always show all discriminant hints.",
-                            "Never show discriminant hints.",
-                            "Only show discriminant hints on fieldless enum variants."
+                            "始终显示所有区分符提示。",
+                            "从不显示区分符提示。",
+                            "仅在无字段的枚举变体上显示区分符提示。"
                         ]
                     }
                 }
             },
-            {
+                        {
                 "title": "inlayHints",
                 "properties": {
                     "rust-analyzer.inlayHints.expressionAdjustmentHints.enable": {
-                        "markdownDescription": "Whether to show inlay hints for type adjustments.",
+                        "markdownDescription": "是否显示类型调整的内联提示。",
                         "default": "never",
                         "type": "string",
                         "enum": [
@@ -1853,9 +1850,9 @@
                             "reborrow"
                         ],
                         "enumDescriptions": [
-                            "Always show all adjustment hints.",
-                            "Never show adjustment hints.",
-                            "Only show auto borrow and dereference adjustment hints."
+                            "始终显示所有调整提示。",
+                            "从不显示调整提示。",
+                            "仅显示自动借用和解引用调整提示。"
                         ]
                     }
                 }
@@ -1864,7 +1861,7 @@
                 "title": "inlayHints",
                 "properties": {
                     "rust-analyzer.inlayHints.expressionAdjustmentHints.hideOutsideUnsafe": {
-                        "markdownDescription": "Whether to hide inlay hints for type adjustments outside of `unsafe` blocks.",
+                        "markdownDescription": "是否在`unsafe`块外部隐藏类型调整的内联提示。",
                         "default": false,
                         "type": "boolean"
                     }
@@ -1874,7 +1871,7 @@
                 "title": "inlayHints",
                 "properties": {
                     "rust-analyzer.inlayHints.expressionAdjustmentHints.mode": {
-                        "markdownDescription": "Whether to show inlay hints as postfix ops (`.*` instead of `*`, etc).",
+                        "markdownDescription": "是否以内缀操作符的形式显示内联提示（例如`.*`而不是`*`等）。",
                         "default": "prefix",
                         "type": "string",
                         "enum": [
@@ -1884,10 +1881,10 @@
                             "prefer_postfix"
                         ],
                         "enumDescriptions": [
-                            "Always show adjustment hints as prefix (`*expr`).",
-                            "Always show adjustment hints as postfix (`expr.*`).",
-                            "Show prefix or postfix depending on which uses less parenthesis, preferring prefix.",
-                            "Show prefix or postfix depending on which uses less parenthesis, preferring postfix."
+                            "始终以内缀形式显示调整提示（`*expr`）。",
+                            "始终以外缀形式显示调整提示（`expr.*`）。",
+                            "根据使用最少括号的方式显示内缀或外缀，优先选择内缀。",
+                            "根据使用最少括号的方式显示内缀或外缀，优先选择外缀。"
                         ]
                     }
                 }
@@ -1896,7 +1893,7 @@
                 "title": "inlayHints",
                 "properties": {
                     "rust-analyzer.inlayHints.genericParameterHints.const.enable": {
-                        "markdownDescription": "Whether to show const generic parameter name inlay hints.",
+                        "markdownDescription": "是否显示const泛型参数名称的内联提示。",
                         "default": true,
                         "type": "boolean"
                     }
@@ -1906,7 +1903,7 @@
                 "title": "inlayHints",
                 "properties": {
                     "rust-analyzer.inlayHints.genericParameterHints.lifetime.enable": {
-                        "markdownDescription": "Whether to show generic lifetime parameter name inlay hints.",
+                        "markdownDescription": "是否显示泛型生命周期参数名称的内联提示。",
                         "default": false,
                         "type": "boolean"
                     }
@@ -1916,7 +1913,7 @@
                 "title": "inlayHints",
                 "properties": {
                     "rust-analyzer.inlayHints.genericParameterHints.type.enable": {
-                        "markdownDescription": "Whether to show generic type parameter name inlay hints.",
+                        "markdownDescription": "是否显示泛型类型参数名称的内联提示。",
                         "default": false,
                         "type": "boolean"
                     }
@@ -1926,7 +1923,7 @@
                 "title": "inlayHints",
                 "properties": {
                     "rust-analyzer.inlayHints.implicitDrops.enable": {
-                        "markdownDescription": "Whether to show implicit drop hints.",
+                        "markdownDescription": "是否显示隐式丢弃的内联提示。",
                         "default": false,
                         "type": "boolean"
                     }
@@ -1936,7 +1933,7 @@
                 "title": "inlayHints",
                 "properties": {
                     "rust-analyzer.inlayHints.lifetimeElisionHints.enable": {
-                        "markdownDescription": "Whether to show inlay type hints for elided lifetimes in function signatures.",
+                        "markdownDescription": "是否在函数签名中显示省略生命周期的内联类型提示。",
                         "default": "never",
                         "type": "string",
                         "enum": [
@@ -1945,9 +1942,9 @@
                             "skip_trivial"
                         ],
                         "enumDescriptions": [
-                            "Always show lifetime elision hints.",
-                            "Never show lifetime elision hints.",
-                            "Only show lifetime elision hints if a return type is involved."
+                            "始终显示生命周期省略提示。",
+                            "从不显示生命周期省略提示。",
+                            "仅当涉及返回类型时显示生命周期省略提示。"
                         ]
                     }
                 }
@@ -1956,7 +1953,7 @@
                 "title": "inlayHints",
                 "properties": {
                     "rust-analyzer.inlayHints.lifetimeElisionHints.useParameterNames": {
-                        "markdownDescription": "Whether to prefer using parameter names as the name for elided lifetime hints if possible.",
+                        "markdownDescription": "如果可能，是否优先使用参数名称作为省略生命周期提示的名称。",
                         "default": false,
                         "type": "boolean"
                     }
@@ -1966,7 +1963,7 @@
                 "title": "inlayHints",
                 "properties": {
                     "rust-analyzer.inlayHints.maxLength": {
-                        "markdownDescription": "Maximum length for inlay hints. Set to null to have an unlimited length.",
+                        "markdownDescription": "内联提示的最大长度。设置为null则表示无限制。",
                         "default": 25,
                         "type": [
                             "null",
@@ -1980,7 +1977,7 @@
                 "title": "inlayHints",
                 "properties": {
                     "rust-analyzer.inlayHints.parameterHints.enable": {
-                        "markdownDescription": "Whether to show function parameter name inlay hints at the call\nsite.",
+                        "markdownDescription": "是否在函数调用现场显示函数参数名称的内联提示。",
                         "default": true,
                         "type": "boolean"
                     }
@@ -1990,7 +1987,7 @@
                 "title": "inlayHints",
                 "properties": {
                     "rust-analyzer.inlayHints.rangeExclusiveHints.enable": {
-                        "markdownDescription": "Whether to show exclusive range inlay hints.",
+                        "markdownDescription": "是否显示独占范围的内联提示。",
                         "default": false,
                         "type": "boolean"
                     }
@@ -2000,7 +1997,7 @@
                 "title": "inlayHints",
                 "properties": {
                     "rust-analyzer.inlayHints.reborrowHints.enable": {
-                        "markdownDescription": "Whether to show inlay hints for compiler inserted reborrows.\nThis setting is deprecated in favor of #rust-analyzer.inlayHints.expressionAdjustmentHints.enable#.",
+                        "markdownDescription": "是否显示编译器插入的重新借用的内联提示。\n这个设置已被 #rust-analyzer.inlayHints.expressionAdjustmentHints.enable# 替代。",
                         "default": "never",
                         "type": "string",
                         "enum": [
@@ -2009,9 +2006,9 @@
                             "mutable"
                         ],
                         "enumDescriptions": [
-                            "Always show reborrow hints.",
-                            "Never show reborrow hints.",
-                            "Only show mutable reborrow hints."
+                            "始终显示重新借用提示。",
+                            "从不显示重新借用提示。",
+                            "仅显示可变重新借用提示。"
                         ]
                     }
                 }
@@ -2020,7 +2017,7 @@
                 "title": "inlayHints",
                 "properties": {
                     "rust-analyzer.inlayHints.renderColons": {
-                        "markdownDescription": "Whether to render leading colons for type hints, and trailing colons for parameter hints.",
+                        "markdownDescription": "是否渲染类型提示前的冒号和参数提示后的冒号。",
                         "default": true,
                         "type": "boolean"
                     }
@@ -2030,7 +2027,7 @@
                 "title": "inlayHints",
                 "properties": {
                     "rust-analyzer.inlayHints.typeHints.enable": {
-                        "markdownDescription": "Whether to show inlay type hints for variables.",
+                        "markdownDescription": "是否显示变量的内联类型提示。",
                         "default": true,
                         "type": "boolean"
                     }
@@ -2040,7 +2037,7 @@
                 "title": "inlayHints",
                 "properties": {
                     "rust-analyzer.inlayHints.typeHints.hideClosureInitialization": {
-                        "markdownDescription": "Whether to hide inlay type hints for `let` statements that initialize to a closure.\nOnly applies to closures with blocks, same as `#rust-analyzer.inlayHints.closureReturnTypeHints.enable#`.",
+                        "markdownDescription": "是否隐藏初始化为闭包的`let`语句的内联类型提示。\n只适用于有块的闭包，与`#rust-analyzer.inlayHints.closureReturnTypeHints.enable#`相同。",
                         "default": false,
                         "type": "boolean"
                     }
@@ -2050,7 +2047,7 @@
                 "title": "inlayHints",
                 "properties": {
                     "rust-analyzer.inlayHints.typeHints.hideNamedConstructor": {
-                        "markdownDescription": "Whether to hide inlay type hints for constructors.",
+                        "markdownDescription": "是否隐藏构造函数的内联类型提示。",
                         "default": false,
                         "type": "boolean"
                     }
@@ -2060,7 +2057,7 @@
                 "title": "interpret",
                 "properties": {
                     "rust-analyzer.interpret.tests": {
-                        "markdownDescription": "Enables the experimental support for interpreting tests.",
+                        "markdownDescription": "启用解释测试的实验性支持。",
                         "default": false,
                         "type": "boolean"
                     }
@@ -2070,17 +2067,17 @@
                 "title": "joinLines",
                 "properties": {
                     "rust-analyzer.joinLines.joinAssignments": {
-                        "markdownDescription": "Join lines merges consecutive declaration and initialization of an assignment.",
+                        "markdownDescription": "合并连续的声明和初始化赋值。",
                         "default": true,
                         "type": "boolean"
                     }
                 }
             },
-            {
+                        {
                 "title": "joinLines",
                 "properties": {
                     "rust-analyzer.joinLines.joinElseIf": {
-                        "markdownDescription": "Join lines inserts else between consecutive ifs.",
+                        "markdownDescription": "合并连续的if语句中的else部分。",
                         "default": true,
                         "type": "boolean"
                     }
@@ -2090,7 +2087,7 @@
                 "title": "joinLines",
                 "properties": {
                     "rust-analyzer.joinLines.removeTrailingComma": {
-                        "markdownDescription": "Join lines removes trailing commas.",
+                        "markdownDescription": "合并行时移除尾随逗号。",
                         "default": true,
                         "type": "boolean"
                     }
@@ -2100,7 +2097,7 @@
                 "title": "joinLines",
                 "properties": {
                     "rust-analyzer.joinLines.unwrapTrivialBlock": {
-                        "markdownDescription": "Join lines unwraps trivial blocks.",
+                        "markdownDescription": "合并行时展开简单的代码块。",
                         "default": true,
                         "type": "boolean"
                     }
@@ -2110,7 +2107,7 @@
                 "title": "lens",
                 "properties": {
                     "rust-analyzer.lens.debug.enable": {
-                        "markdownDescription": "Whether to show `Debug` lens. Only applies when\n`#rust-analyzer.lens.enable#` is set.",
+                        "markdownDescription": "是否显示`Debug`镜头。仅在设置`#rust-analyzer.lens.enable#`时生效。",
                         "default": true,
                         "type": "boolean"
                     }
@@ -2120,7 +2117,7 @@
                 "title": "lens",
                 "properties": {
                     "rust-analyzer.lens.enable": {
-                        "markdownDescription": "Whether to show CodeLens in Rust files.",
+                        "markdownDescription": "是否在Rust文件中显示CodeLens。",
                         "default": true,
                         "type": "boolean"
                     }
@@ -2130,7 +2127,7 @@
                 "title": "lens",
                 "properties": {
                     "rust-analyzer.lens.implementations.enable": {
-                        "markdownDescription": "Whether to show `Implementations` lens. Only applies when\n`#rust-analyzer.lens.enable#` is set.",
+                        "markdownDescription": "是否显示`Implementations`镜头。仅在设置`#rust-analyzer.lens.enable#`时生效。",
                         "default": true,
                         "type": "boolean"
                     }
@@ -2140,7 +2137,7 @@
                 "title": "lens",
                 "properties": {
                     "rust-analyzer.lens.location": {
-                        "markdownDescription": "Where to render annotations.",
+                        "markdownDescription": "在哪里渲染注释。",
                         "default": "above_name",
                         "type": "string",
                         "enum": [
@@ -2148,8 +2145,8 @@
                             "above_whole_item"
                         ],
                         "enumDescriptions": [
-                            "Render annotations above the name of the item.",
-                            "Render annotations above the whole item, including documentation comments and attributes."
+                            "在项的名称上方渲染注释。",
+                            "在整个项上方渲染注释，包括文档注释和属性。"
                         ]
                     }
                 }
@@ -2158,7 +2155,7 @@
                 "title": "lens",
                 "properties": {
                     "rust-analyzer.lens.references.adt.enable": {
-                        "markdownDescription": "Whether to show `References` lens for Struct, Enum, and Union.\nOnly applies when `#rust-analyzer.lens.enable#` is set.",
+                        "markdownDescription": "是否为结构体、枚举和联合显示`References`镜头。\n仅在设置`#rust-analyzer.lens.enable#`时生效。",
                         "default": false,
                         "type": "boolean"
                     }
@@ -2168,7 +2165,7 @@
                 "title": "lens",
                 "properties": {
                     "rust-analyzer.lens.references.enumVariant.enable": {
-                        "markdownDescription": "Whether to show `References` lens for Enum Variants.\nOnly applies when `#rust-analyzer.lens.enable#` is set.",
+                        "markdownDescription": "是否为枚举变体显示`References`镜头。\n仅在设置`#rust-analyzer.lens.enable#`时生效。",
                         "default": false,
                         "type": "boolean"
                     }
@@ -2178,7 +2175,7 @@
                 "title": "lens",
                 "properties": {
                     "rust-analyzer.lens.references.method.enable": {
-                        "markdownDescription": "Whether to show `Method References` lens. Only applies when\n`#rust-analyzer.lens.enable#` is set.",
+                        "markdownDescription": "是否显示`Method References`镜头。\n仅在设置`#rust-analyzer.lens.enable#`时生效。",
                         "default": false,
                         "type": "boolean"
                     }
@@ -2188,7 +2185,7 @@
                 "title": "lens",
                 "properties": {
                     "rust-analyzer.lens.references.trait.enable": {
-                        "markdownDescription": "Whether to show `References` lens for Trait.\nOnly applies when `#rust-analyzer.lens.enable#` is set.",
+                        "markdownDescription": "是否为Trait显示`References`镜头。\n仅在设置`#rust-analyzer.lens.enable#`时生效。",
                         "default": false,
                         "type": "boolean"
                     }
@@ -2198,7 +2195,7 @@
                 "title": "lens",
                 "properties": {
                     "rust-analyzer.lens.run.enable": {
-                        "markdownDescription": "Whether to show `Run` lens. Only applies when\n`#rust-analyzer.lens.enable#` is set.",
+                        "markdownDescription": "是否显示`Run`镜头。\n仅在设置`#rust-analyzer.lens.enable#`时生效。",
                         "default": true,
                         "type": "boolean"
                     }
@@ -2208,7 +2205,7 @@
                 "title": "general",
                 "properties": {
                     "rust-analyzer.linkedProjects": {
-                        "markdownDescription": "Disable project auto-discovery in favor of explicitly specified set\nof projects.\n\nElements must be paths pointing to `Cargo.toml`,\n`rust-project.json`, `.rs` files (which will be treated as standalone files) or JSON\nobjects in `rust-project.json` format.",
+                        "markdownDescription": "禁用项目自动发现，改为显式指定一组项目。\n\n元素必须是指向`Cargo.toml`、\n`rust-project.json`、`.rs`文件（将被视为独立文件）或JSON\n对象在`rust-project.json`格式中的路径。",
                         "default": [],
                         "type": "array",
                         "items": {
@@ -2224,7 +2221,7 @@
                 "title": "lru",
                 "properties": {
                     "rust-analyzer.lru.capacity": {
-                        "markdownDescription": "Number of syntax trees rust-analyzer keeps in memory. Defaults to 128.",
+                        "markdownDescription": "rust-analyzer在内存中保持的语法树数量。默认为128。",
                         "default": null,
                         "type": [
                             "null",
@@ -2239,7 +2236,7 @@
                 "title": "lru",
                 "properties": {
                     "rust-analyzer.lru.query.capacities": {
-                        "markdownDescription": "Sets the LRU capacity of the specified queries.",
+                        "markdownDescription": "设置指定查询的LRU容量。",
                         "default": {},
                         "type": "object"
                     }
@@ -2249,7 +2246,7 @@
                 "title": "notifications",
                 "properties": {
                     "rust-analyzer.notifications.cargoTomlNotFound": {
-                        "markdownDescription": "Whether to show `can't find Cargo.toml` error message.",
+                        "markdownDescription": "是否显示`找不到Cargo.toml`错误消息。",
                         "default": true,
                         "type": "boolean"
                     }
@@ -2259,7 +2256,7 @@
                 "title": "general",
                 "properties": {
                     "rust-analyzer.numThreads": {
-                        "markdownDescription": "How many worker threads in the main loop. The default `null` means to pick automatically.",
+                        "markdownDescription": "主循环中的工作线程数量。默认`null`表示自动选择。",
                         "default": null,
                         "anyOf": [
                             {
@@ -2277,8 +2274,8 @@
                                     "logical"
                                 ],
                                 "enumDescriptions": [
-                                    "Use the number of physical cores",
-                                    "Use the number of logical cores"
+                                    "使用物理核心数量",
+                                    "使用逻辑核心数量"
                                 ]
                             }
                         ]
@@ -2289,7 +2286,7 @@
                 "title": "procMacro",
                 "properties": {
                     "rust-analyzer.procMacro.attributes.enable": {
-                        "markdownDescription": "Expand attribute macros. Requires `#rust-analyzer.procMacro.enable#` to be set.",
+                        "markdownDescription": "展开属性宏。需要设置`#rust-analyzer.procMacro.enable#`。",
                         "default": true,
                         "type": "boolean"
                     }
@@ -2299,7 +2296,7 @@
                 "title": "procMacro",
                 "properties": {
                     "rust-analyzer.procMacro.enable": {
-                        "markdownDescription": "Enable support for procedural macros, implies `#rust-analyzer.cargo.buildScripts.enable#`.",
+                        "markdownDescription": "启用对过程宏的支持，意味着`#rust-analyzer.cargo.buildScripts.enable#`。",
                         "default": true,
                         "type": "boolean"
                     }
@@ -2309,7 +2306,7 @@
                 "title": "procMacro",
                 "properties": {
                     "rust-analyzer.procMacro.ignored": {
-                        "markdownDescription": "These proc-macros will be ignored when trying to expand them.\n\nThis config takes a map of crate names with the exported proc-macro names to ignore as values.",
+                        "markdownDescription": "在尝试展开时将忽略这些proc-macros。\n\n此配置接受一个映射，键是crate名称，值是要忽略的导出的proc-macro名称。",
                         "default": {},
                         "type": "object"
                     }
@@ -2319,7 +2316,7 @@
                 "title": "procMacro",
                 "properties": {
                     "rust-analyzer.procMacro.server": {
-                        "markdownDescription": "Internal config, path to proc-macro server executable.",
+                        "markdownDescription": "内部配置，proc-macro服务器可执行文件的路径。",
                         "default": null,
                         "type": [
                             "null",
@@ -2332,7 +2329,7 @@
                 "title": "references",
                 "properties": {
                     "rust-analyzer.references.excludeImports": {
-                        "markdownDescription": "Exclude imports from find-all-references.",
+                        "markdownDescription": "从查找所有引用中排除导入。",
                         "default": false,
                         "type": "boolean"
                     }
@@ -2342,17 +2339,17 @@
                 "title": "references",
                 "properties": {
                     "rust-analyzer.references.excludeTests": {
-                        "markdownDescription": "Exclude tests from find-all-references and call-hierarchy.",
+                        "markdownDescription": "从查找所有引用和调用层级中排除测试。",
                         "default": false,
                         "type": "boolean"
                     }
                 }
             },
-            {
+                        {
                 "title": "runnables",
                 "properties": {
                     "rust-analyzer.runnables.command": {
-                        "markdownDescription": "Command to be executed instead of 'cargo' for runnables.",
+                        "markdownDescription": "执行可运行文件时代替'cargo'的命令。",
                         "default": null,
                         "type": [
                             "null",
@@ -2365,7 +2362,7 @@
                 "title": "runnables",
                 "properties": {
                     "rust-analyzer.runnables.extraArgs": {
-                        "markdownDescription": "Additional arguments to be passed to cargo for runnables such as\ntests or binaries. For example, it may be `--release`.",
+                        "markdownDescription": "传递给cargo的额外参数，适用于可运行文件，例如测试或二进制文件。例如，可以是`--release`。",
                         "default": [],
                         "type": "array",
                         "items": {
@@ -2378,7 +2375,7 @@
                 "title": "runnables",
                 "properties": {
                     "rust-analyzer.runnables.extraTestBinaryArgs": {
-                        "markdownDescription": "Additional arguments to be passed through Cargo to launched tests, benchmarks, or\ndoc-tests.\n\nUnless the launched target uses a\n[custom test harness](https://doc.rust-lang.org/cargo/reference/cargo-targets.html#the-harness-field),\nthey will end up being interpreted as options to\n[`rustc`’s built-in test harness (“libtest”)](https://doc.rust-lang.org/rustc/tests/index.html#cli-arguments).",
+                        "markdownDescription": "通过Cargo传递给启动测试、基准测试或文档测试的额外参数。\n\n除非启动的目标使用\n[自定义测试框架](https://doc.rust-lang.org/cargo/reference/cargo-targets.html#the-harness-field)，\n否则它们将被视为\n[`rustc`内置测试框架（“libtest”）](https://doc.rust-lang.org/rustc/tests/index.html#cli-arguments)的选项。",
                         "default": [
                             "--show-output"
                         ],
@@ -2393,7 +2390,7 @@
                 "title": "rustc",
                 "properties": {
                     "rust-analyzer.rustc.source": {
-                        "markdownDescription": "Path to the Cargo.toml of the rust compiler workspace, for usage in rustc_private\nprojects, or \"discover\" to try to automatically find it if the `rustc-dev` component\nis installed.\n\nAny project which uses rust-analyzer with the rustcPrivate\ncrates must set `[package.metadata.rust-analyzer] rustc_private=true` to use it.\n\nThis option does not take effect until rust-analyzer is restarted.",
+                        "markdownDescription": "rust编译器工作区的Cargo.toml的路径，用于rustc_private项目，或者设置为\"discover\"以尝试在安装了`rustc-dev`组件时自动找到它。\n\n任何使用rust-analyzer与rustcPrivate\ncrates的项目必须设置`[package.metadata.rust-analyzer] rustc_private=true`才能使用它。\n\n此选项在rust-analyzer重启后生效。",
                         "default": null,
                         "type": [
                             "null",
@@ -2406,7 +2403,7 @@
                 "title": "rustfmt",
                 "properties": {
                     "rust-analyzer.rustfmt.extraArgs": {
-                        "markdownDescription": "Additional arguments to `rustfmt`.",
+                        "markdownDescription": "传递给`rustfmt`的额外参数。",
                         "default": [],
                         "type": "array",
                         "items": {
@@ -2419,7 +2416,7 @@
                 "title": "rustfmt",
                 "properties": {
                     "rust-analyzer.rustfmt.overrideCommand": {
-                        "markdownDescription": "Advanced option, fully override the command rust-analyzer uses for\nformatting. This should be the equivalent of `rustfmt` here, and\nnot that of `cargo fmt`. The file contents will be passed on the\nstandard input and the formatted result will be read from the\nstandard output.",
+                        "markdownDescription": "高级选项，完全覆盖rust-analyzer用于格式化的命令。这里应该是`rustfmt`的等效命令，而不是`cargo fmt`的。文件内容将通过标准输入传递，格式化结果将从标准输出读取。",
                         "default": null,
                         "type": [
                             "null",
@@ -2435,7 +2432,7 @@
                 "title": "rustfmt",
                 "properties": {
                     "rust-analyzer.rustfmt.rangeFormatting.enable": {
-                        "markdownDescription": "Enables the use of rustfmt's unstable range formatting command for the\n`textDocument/rangeFormatting` request. The rustfmt option is unstable and only\navailable on a nightly build.",
+                        "markdownDescription": "启用rustfmt不稳定的区间格式化命令用于`textDocument/rangeFormatting`请求。rustfmt选项是不稳定的，只在夜间构建中可用。",
                         "default": false,
                         "type": "boolean"
                     }
@@ -2445,7 +2442,7 @@
                 "title": "semanticHighlighting",
                 "properties": {
                     "rust-analyzer.semanticHighlighting.doc.comment.inject.enable": {
-                        "markdownDescription": "Inject additional highlighting into doc comments.\n\nWhen enabled, rust-analyzer will highlight rust source in doc comments as well as intra\ndoc links.",
+                        "markdownDescription": "在文档注释中注入额外的高亮显示。\n\n启用后，rust-analyzer将高亮显示文档注释中的Rust源代码以及文档内的链接。",
                         "default": true,
                         "type": "boolean"
                     }
@@ -2455,7 +2452,7 @@
                 "title": "semanticHighlighting",
                 "properties": {
                     "rust-analyzer.semanticHighlighting.nonStandardTokens": {
-                        "markdownDescription": "Whether the server is allowed to emit non-standard tokens and modifiers.",
+                        "markdownDescription": "服务器是否允许发出非标准令牌和修饰符。",
                         "default": true,
                         "type": "boolean"
                     }
@@ -2465,7 +2462,7 @@
                 "title": "semanticHighlighting",
                 "properties": {
                     "rust-analyzer.semanticHighlighting.operator.enable": {
-                        "markdownDescription": "Use semantic tokens for operators.\n\nWhen disabled, rust-analyzer will emit semantic tokens only for operator tokens when\nthey are tagged with modifiers.",
+                        "markdownDescription": "为操作符使用语义标记。\n\n禁用时，rust-analyzer只有在操作符被标记为修饰符时才会发出语义标记。",
                         "default": true,
                         "type": "boolean"
                     }
@@ -2475,7 +2472,7 @@
                 "title": "semanticHighlighting",
                 "properties": {
                     "rust-analyzer.semanticHighlighting.operator.specialization.enable": {
-                        "markdownDescription": "Use specialized semantic tokens for operators.\n\nWhen enabled, rust-analyzer will emit special token types for operator tokens instead\nof the generic `operator` token type.",
+                        "markdownDescription": "为操作符使用专门的语义标记。\n\n启用后，rust-analyzer将发出特殊的标记类型用于操作符，而不是通用的`operator`标记类型。",
                         "default": false,
                         "type": "boolean"
                     }
@@ -2485,7 +2482,7 @@
                 "title": "semanticHighlighting",
                 "properties": {
                     "rust-analyzer.semanticHighlighting.punctuation.enable": {
-                        "markdownDescription": "Use semantic tokens for punctuation.\n\nWhen disabled, rust-analyzer will emit semantic tokens only for punctuation tokens when\nthey are tagged with modifiers or have a special role.",
+                        "markdownDescription": "为标点符号使用语义标记。\n\n禁用时，rust-analyzer只有在标点符号被标记为修饰符或具有特殊角色时才会发出语义标记。",
                         "default": false,
                         "type": "boolean"
                     }
@@ -2495,7 +2492,7 @@
                 "title": "semanticHighlighting",
                 "properties": {
                     "rust-analyzer.semanticHighlighting.punctuation.separate.macro.bang": {
-                        "markdownDescription": "When enabled, rust-analyzer will emit a punctuation semantic token for the `!` of macro\ncalls.",
+                        "markdownDescription": "启用后，rust-analyzer将为宏调用的`!`发出一个标点语义标记。",
                         "default": false,
                         "type": "boolean"
                     }
@@ -2505,7 +2502,7 @@
                 "title": "semanticHighlighting",
                 "properties": {
                     "rust-analyzer.semanticHighlighting.punctuation.specialization.enable": {
-                        "markdownDescription": "Use specialized semantic tokens for punctuation.\n\nWhen enabled, rust-analyzer will emit special token types for punctuation tokens instead\nof the generic `punctuation` token type.",
+                        "markdownDescription": "为标点符号使用专门的语义标记。\n\n启用后，rust-analyzer将发出特殊的标记类型用于标点符号，而不是通用的`punctuation`标记类型。",
                         "default": false,
                         "type": "boolean"
                     }
@@ -2515,7 +2512,7 @@
                 "title": "semanticHighlighting",
                 "properties": {
                     "rust-analyzer.semanticHighlighting.strings.enable": {
-                        "markdownDescription": "Use semantic tokens for strings.\n\nIn some editors (e.g. vscode) semantic tokens override other highlighting grammars.\nBy disabling semantic tokens for strings, other grammars can be used to highlight\ntheir contents.",
+                        "markdownDescription": "为字符串使用语义标记。\n\n在某些编辑器（例如vscode）中，语义标记会覆盖其他高亮显示语法。\n通过禁用字符串的语义标记，可以使用其他语法来高亮显示它们的内容。",
                         "default": true,
                         "type": "boolean"
                     }
@@ -2525,7 +2522,7 @@
                 "title": "signatureInfo",
                 "properties": {
                     "rust-analyzer.signatureInfo.detail": {
-                        "markdownDescription": "Show full signature of the callable. Only shows parameters if disabled.",
+                        "markdownDescription": "显示可调用项的完整签名。如果禁用，则仅显示参数。",
                         "default": "full",
                         "type": "string",
                         "enum": [
@@ -2533,8 +2530,8 @@
                             "parameters"
                         ],
                         "enumDescriptions": [
-                            "Show the entire signature.",
-                            "Show only the parameters."
+                            "显示整个签名。",
+                            "仅显示参数。"
                         ]
                     }
                 }
@@ -2543,7 +2540,7 @@
                 "title": "signatureInfo",
                 "properties": {
                     "rust-analyzer.signatureInfo.documentation.enable": {
-                        "markdownDescription": "Show documentation.",
+                        "markdownDescription": "显示文档。",
                         "default": true,
                         "type": "boolean"
                     }
@@ -2553,17 +2550,17 @@
                 "title": "typing",
                 "properties": {
                     "rust-analyzer.typing.autoClosingAngleBrackets.enable": {
-                        "markdownDescription": "Whether to insert closing angle brackets when typing an opening angle bracket of a generic argument list.",
+                        "markdownDescription": "在输入泛型参数列表的开角括号时，是否插入闭角括号。",
                         "default": false,
                         "type": "boolean"
                     }
                 }
             },
-            {
+                        {
                 "title": "workspace",
                 "properties": {
                     "rust-analyzer.workspace.discoverConfig": {
-                        "markdownDescription": "Enables automatic discovery of projects using [`DiscoverWorkspaceConfig::command`].\n\n[`DiscoverWorkspaceConfig`] also requires setting `progress_label` and `files_to_watch`.\n`progress_label` is used for the title in progress indicators, whereas `files_to_watch`\nis used to determine which build system-specific files should be watched in order to\nreload rust-analyzer.\n\nBelow is an example of a valid configuration:\n```json\n\"rust-analyzer.workspace.discoverConfig\": {\n        \"command\": [\n                \"rust-project\",\n                \"develop-json\"\n        ],\n        \"progressLabel\": \"rust-analyzer\",\n        \"filesToWatch\": [\n                \"BUCK\"\n        ]\n}\n```\n\n## On `DiscoverWorkspaceConfig::command`\n\n**Warning**: This format is provisional and subject to change.\n\n[`DiscoverWorkspaceConfig::command`] *must* return a JSON object\ncorresponding to `DiscoverProjectData::Finished`:\n\n```norun\n#[derive(Debug, Clone, Deserialize, Serialize)]\n#[serde(tag = \"kind\")]\n#[serde(rename_all = \"snake_case\")]\nenum DiscoverProjectData {\n        Finished { buildfile: Utf8PathBuf, project: ProjectJsonData },\n        Error { error: String, source: Option<String> },\n        Progress { message: String },\n}\n```\n\nAs JSON, `DiscoverProjectData::Finished` is:\n\n```json\n{\n        // the internally-tagged representation of the enum.\n        \"kind\": \"finished\",\n        // the file used by a non-Cargo build system to define\n        // a package or target.\n        \"buildfile\": \"rust-analyzer/BUILD\",\n        // the contents of a rust-project.json, elided for brevity\n        \"project\": {\n                \"sysroot\": \"foo\",\n                \"crates\": []\n        }\n}\n```\n\nIt is encouraged, but not required, to use the other variants on\n`DiscoverProjectData` to provide a more polished end-user experience.\n\n`DiscoverWorkspaceConfig::command` may *optionally* include an `{arg}`,\nwhich will be substituted with the JSON-serialized form of the following\nenum:\n\n```norun\n#[derive(PartialEq, Clone, Debug, Serialize)]\n#[serde(rename_all = \"camelCase\")]\npub enum DiscoverArgument {\n     Path(AbsPathBuf),\n     Buildfile(AbsPathBuf),\n}\n```\n\nThe JSON representation of `DiscoverArgument::Path` is:\n\n```json\n{\n        \"path\": \"src/main.rs\"\n}\n```\n\nSimilarly, the JSON representation of `DiscoverArgument::Buildfile` is:\n\n```\n{\n        \"buildfile\": \"BUILD\"\n}\n```\n\n`DiscoverArgument::Path` is used to find and generate a `rust-project.json`,\nand therefore, a workspace, whereas `DiscoverArgument::buildfile` is used to\nto update an existing workspace. As a reference for implementors,\nbuck2's `rust-project` will likely be useful:\nhttps://github.com/facebook/buck2/tree/main/integrations/rust-project.",
+                        "markdownDescription": "启用使用[`DiscoverWorkspaceConfig::command`]的自动项目发现。\n\n[`DiscoverWorkspaceConfig`]还需要设置`progress_label`和`files_to_watch`。\n`progress_label`用于进度指示器中的标题，而`files_to_watch`\n用于确定需要监视哪些特定于构建系统的文件以便重新加载rust-analyzer。\n\n以下是一个有效的配置示例：\n```json\n\"rust-analyzer.workspace.discoverConfig\": {\n        \"command\": [\n                \"rust-project\",\n                \"develop-json\"\n        ],\n        \"progressLabel\": \"rust-analyzer\",\n        \"filesToWatch\": [\n                \"BUCK\"\n        ]\n}\n```\n\n## 关于`DiscoverWorkspaceConfig::command`\n\n**警告**：此格式是临时的，可能会更改。\n\n[`DiscoverWorkspaceConfig::command`]*必须*返回一个JSON对象\n对应于`DiscoverProjectData::Finished`：\n\n```norun\n#[derive(Debug, Clone, Deserialize, Serialize)]\n#[serde(tag = \"kind\")]\n#[serde(rename_all = \"snake_case\")]\nenum DiscoverProjectData {\n        Finished { buildfile: Utf8PathBuf, project: ProjectJsonData },\n        Error { error: String, source: Option<String> },\n        Progress { message: String },\n}\n```\n\n作为JSON，`DiscoverProjectData::Finished`是：\n\n```json\n{\n        // 枚举的内部标记表示。\n        \"kind\": \"finished\",\n        // 非Cargo构建系统用于定义\n        // 包或目标的文件。\n        \"buildfile\": \"rust-analyzer/BUILD\",\n        // rust-project.json的内容，为简洁起见省略\n        \"project\": {\n                \"sysroot\": \"foo\",\n                \"crates\": []\n        }\n}\n```\n\n鼓励但不要求使用`DiscoverProjectData`的其他变体\n以提供更完善的最终用户体验。\n\n`DiscoverWorkspaceConfig::command`可以*选择性地*包含一个`{arg}`,\n它将被替换为以下枚举的JSON序列化形式：\n\n```norun\n#[derive(PartialEq, Clone, Debug, Serialize)]\n#[serde(rename_all = \"camelCase\")]\npub enum DiscoverArgument {\n     Path(AbsPathBuf),\n     Buildfile(AbsPathBuf),\n}\n```\n\n`DiscoverArgument::Path`的JSON表示是：\n\n```json\n{\n        \"path\": \"src/main.rs\"\n}\n```\n\n类似地，`DiscoverArgument::Buildfile`的JSON表示是：\n\n```\n{\n        \"buildfile\": \"BUILD\"\n}\n```\n\n`DiscoverArgument::Path`用于查找和生成`rust-project.json`，\n因此，一个工作空间，而`DiscoverArgument::buildfile`用于\n更新现有工作空间。作为实现者的参考，\nbuck2的`rust-project`可能会很有用：\nhttps://github.com/facebook/buck2/tree/main/integrations/rust-project.", 
                         "default": null,
                         "anyOf": [
                             {
@@ -2597,7 +2594,7 @@
                 "title": "workspace",
                 "properties": {
                     "rust-analyzer.workspace.symbol.search.kind": {
-                        "markdownDescription": "Workspace symbol search kind.",
+                        "markdownDescription": "工作区符号搜索类型。",
                         "default": "only_types",
                         "type": "string",
                         "enum": [
@@ -2605,8 +2602,8 @@
                             "all_symbols"
                         ],
                         "enumDescriptions": [
-                            "Search for types only.",
-                            "Search for all symbols kinds."
+                            "仅搜索类型。",
+                            "搜索所有符号类型。"
                         ]
                     }
                 }
@@ -2615,7 +2612,7 @@
                 "title": "workspace",
                 "properties": {
                     "rust-analyzer.workspace.symbol.search.limit": {
-                        "markdownDescription": "Limits the number of items returned from a workspace symbol search (Defaults to 128).\nSome clients like vs-code issue new searches on result filtering and don't require all results to be returned in the initial search.\nOther clients requires all results upfront and might require a higher limit.",
+                        "markdownDescription": "限制工作区符号搜索返回的项目数量（默认为128）。\n一些客户端如vs-code在结果过滤时会发出新的搜索，不需要在初始搜索中返回所有结果。\n其他客户端需要预先获取所有结果，可能需要更高的限制。",
                         "default": 128,
                         "type": "integer",
                         "minimum": 0
@@ -2626,7 +2623,7 @@
                 "title": "workspace",
                 "properties": {
                     "rust-analyzer.workspace.symbol.search.scope": {
-                        "markdownDescription": "Workspace symbol search scope.",
+                        "markdownDescription": "工作区符号搜索范围。",
                         "default": "workspace",
                         "type": "string",
                         "enum": [
@@ -2634,14 +2631,14 @@
                             "workspace_and_dependencies"
                         ],
                         "enumDescriptions": [
-                            "Search in current workspace only.",
-                            "Search in current workspace and dependencies."
+                            "仅在当前工作区搜索。",
+                            "在当前工作区及其依赖中搜索。"
                         ]
                     }
                 }
             },
             {
-                "title": "$generated-end"
+                
             }
         ],
         "configurationDefaults": {
@@ -2772,7 +2769,7 @@
         "colors": [
             {
                 "id": "rust_analyzer.syntaxTreeBorder",
-                "description": "Color of the border displayed in the Rust source code for the selected syntax node (see \"Show Syntax Tree\" command)",
+                "description": "在Rust源代码中为选定的语法节点显示的边框颜色（见“显示语法树”命令）",
                 "defaults": {
                     "dark": "#ffffff",
                     "light": "#b700ff",
@@ -2783,254 +2780,254 @@
         "semanticTokenTypes": [
             {
                 "id": "angle",
-                "description": "Style for < or >",
+                "description": "<或>的样式",
                 "superType": "punctuation"
             },
             {
                 "id": "arithmetic",
-                "description": "Style for arithmetic operators",
+                "description": "算术操作符的样式",
                 "superType": "operator"
             },
             {
                 "id": "attribute",
-                "description": "Style for attributes"
+                "description": "属性的样式"
             },
             {
                 "id": "attributeBracket",
-                "description": "Style for attribute invocation brackets, that is the `#[` and `]` tokens",
+                "description": "属性调用括号的样式，即`#[`和`]`标记",
                 "superType": "punctuation"
             },
             {
                 "id": "bitwise",
-                "description": "Style for bitwise operators",
+                "description": "位操作符的样式",
                 "superType": "operator"
             },
             {
                 "id": "boolean",
-                "description": "Style for boolean literals",
+                "description": "布尔字面量的样式",
                 "superType": "keyword"
             },
             {
                 "id": "brace",
-                "description": "Style for { or }",
+                "description": "{或}的样式",
                 "superType": "punctuation"
             },
             {
                 "id": "bracket",
-                "description": "Style for [ or ]",
+                "description": "[或]的样式",
                 "superType": "punctuation"
             },
             {
                 "id": "builtinAttribute",
-                "description": "Style for builtin attributes",
+                "description": "内置属性的样式",
                 "superType": "attribute"
             },
             {
                 "id": "builtinType",
-                "description": "Style for builtin types",
+                "description": "内置类型的样式",
                 "superType": "type"
             },
             {
                 "id": "character",
-                "description": "Style for character literals",
+                "description": "字符字面量的样式",
                 "superType": "string"
             },
             {
                 "id": "colon",
-                "description": "Style for :",
+                "description": ":的样式",
                 "superType": "punctuation"
             },
             {
                 "id": "comma",
-                "description": "Style for ,",
+                "description": ",的样式",
                 "superType": "punctuation"
             },
             {
                 "id": "comparison",
-                "description": "Style for comparison operators",
+                "description": "比较操作符的样式",
                 "superType": "operator"
             },
             {
                 "id": "constParameter",
-                "description": "Style for const generics"
+                "description": "常量泛型的样式"
             },
             {
                 "id": "const",
-                "description": "Style for consts",
+                "description": "常量的样式",
                 "superType": "variable"
             },
             {
                 "id": "derive",
-                "description": "Style for derives",
+                "description": "派生属性的样式",
                 "superType": "attribute"
             },
             {
                 "id": "deriveHelper",
-                "description": "Style for derive helpers",
+                "description": "派生辅助属性的样式",
                 "superType": "attribute"
             },
             {
                 "id": "dot",
-                "description": "Style for .",
+                "description": ".的样式",
                 "superType": "punctuation"
             },
             {
                 "id": "escapeSequence",
-                "description": "Style for char or byte escapes in strings"
+                "description": "字符串中字符或字节的转义序列的样式"
             },
             {
                 "id": "formatSpecifier",
-                "description": "Style for {} placeholders in format strings"
+                "description": "格式化字符串中{}占位符的样式"
             },
             {
                 "id": "invalidEscapeSequence",
-                "description": "Style for invalid char or byte escapes in strings"
+                "description": "字符串中无效的字符或字节转义序列的样式"
             },
             {
                 "id": "label",
-                "description": "Style for labels"
+                "description": "标签的样式"
             },
             {
                 "id": "lifetime",
-                "description": "Style for lifetimes"
+                "description": "生命周期的样式"
             },
             {
                 "id": "logical",
-                "description": "Style for logic operators",
+                "description": "逻辑操作符的样式",
                 "superType": "operator"
             },
             {
                 "id": "macroBang",
-                "description": "Style for the ! token of macro calls",
+                "description": "宏调用中的!标记的样式",
                 "superType": "punctuation"
             },
             {
                 "id": "parenthesis",
-                "description": "Style for ( or )",
+                "description": "(或)的样式",
                 "superType": "punctuation"
             },
             {
                 "id": "procMacro",
-                "description": "Style for proc macro code",
+                "description": "过程宏代码的样式",
                 "superType": "macro"
             },
             {
                 "id": "punctuation",
-                "description": "Style for generic punctuation"
+                "description": "通用标点符号的样式"
             },
             {
                 "id": "operator",
-                "description": "Style for operators",
+                "description": "操作符的样式",
                 "superType": "punctuation"
             },
             {
                 "id": "selfKeyword",
-                "description": "Style for the self keyword",
+                "description": "self关键字的样式",
                 "superType": "keyword"
             },
             {
                 "id": "selfTypeKeyword",
-                "description": "Style for the self type keyword",
+                "description": "self类型关键字的样式",
                 "superType": "keyword"
             },
             {
                 "id": "semicolon",
-                "description": "Style for ;",
+                "description": ";的样式",
                 "superType": "punctuation"
             },
             {
                 "id": "static",
-                "description": "Style for statics",
+                "description": "静态变量的样式",
                 "superType": "variable"
             },
             {
                 "id": "toolModule",
-                "description": "Style for tool module attributes",
+                "description": "工具模块属性的样式",
                 "superType": "decorator"
             },
             {
                 "id": "typeAlias",
-                "description": "Style for type aliases",
+                "description": "类型别名的样式",
                 "superType": "type"
             },
             {
                 "id": "union",
-                "description": "Style for C-style untagged unions",
+                "description": "C风格无标签联合的样式",
                 "superType": "type"
             },
             {
                 "id": "unresolvedReference",
-                "description": "Style for names which can not be resolved due to compilation errors"
+                "description": "由于编译错误无法解析的名称的样式"
             }
         ],
         "semanticTokenModifiers": [
             {
                 "id": "async",
-                "description": "Style for async functions and the `async` and `await` keywords"
+                "description": "异步函数和`async`、`await`关键字的样式"
             },
             {
                 "id": "attribute",
-                "description": "Style for elements within attributes"
+                "description": "属性内部元素的样式"
             },
             {
                 "id": "callable",
-                "description": "Style for locals whose types implements one of the `Fn*` traits"
+                "description": "类型实现了`Fn*`特征之一的局部变量的样式"
             },
             {
                 "id": "constant",
-                "description": "Style for compile-time constants"
+                "description": "编译时常量的样式"
             },
             {
                 "id": "consuming",
-                "description": "Style for locals that are being consumed when use in a function call"
+                "description": "在函数调用中被消耗的局部变量的样式"
             },
             {
                 "id": "controlFlow",
-                "description": "Style for control-flow related tokens, this includes the `?` operator"
+                "description": "控制流相关标记的样式，包括`?`操作符"
             },
             {
                 "id": "crateRoot",
-                "description": "Style for names resolving to a crate root"
+                "description": "解析为crate根的名称的样式"
             },
             {
                 "id": "injected",
-                "description": "Style for doc-string injected highlighting like rust source blocks in documentation"
+                "description": "文档字符串注入高亮显示的样式，如文档中的Rust源代码块"
             },
             {
                 "id": "intraDocLink",
-                "description": "Style for intra doc links in doc-strings"
+                "description": "文档字符串中的内部文档链接的样式"
             },
             {
                 "id": "library",
-                "description": "Style for items that are defined outside of the current crate"
+                "description": "在当前crate之外定义的项的样式"
             },
             {
                 "id": "macro",
-                "description": "Style for tokens inside of macro calls"
+                "description": "宏调用内部标记的样式"
             },
             {
                 "id": "mutable",
-                "description": "Style for mutable locals and statics as well as functions taking `&mut self`"
+                "description": "可变局部变量和静态变量以及接受`&mut self`的函数的样式"
             },
             {
                 "id": "procMacro",
-                "description": "Style for tokens inside of proc-macro calls"
+                "description": "过程宏调用内部标记的样式"
             },
             {
                 "id": "public",
-                "description": "Style for items that are from the current crate and are `pub`"
+                "description": "来自当前crate并且是`pub`的项的样式"
             },
             {
                 "id": "reference",
-                "description": "Style for locals behind a reference and functions taking `self` by reference"
+                "description": "引用背后的局部变量和接受`self`引用的函数的样式"
             },
             {
                 "id": "trait",
-                "description": "Style for associated trait items"
+                "description": "关联trait项的样式"
             },
             {
                 "id": "unsafe",
-                "description": "Style for unsafe operations, like unsafe function calls, as well as the `unsafe` token"
+                "description": "不安全操作的样式，如不安全函数调用，以及`unsafe`标记"
             }
         ],
         "semanticTokenScopes": [
@@ -3222,24 +3219,24 @@
         "walkthroughs": [
             {
                 "id": "landing",
-                "title": "Learn about rust-analyzer",
-                "description": "A brief introduction to get started with rust-analyzer. Learn about key features and resources to help you get the most out of the extension.",
+                "title": "了解 rust-analyzer",
+                "description": "简要介绍如何开始使用 rust-analyzer。了解关键特性和资源，以帮助您充分利用此扩展功能。",
                 "steps": [
                     {
                         "id": "setup",
-                        "title": "Useful Setup Tips",
-                        "description": "There are a couple of things you might want to configure upfront to your tastes. We'll name a few here but be sure to check out the docs linked below!\n\n**Marking library sources as readonly**\n\nAdding the snippet on the right to your settings.json will mark all Rust library sources as readonly.\n\n**Check on Save**\n\nBy default, rust-analyzer will run ``cargo check`` on your codebase when you save a file, rendering diagnostics emitted by ``cargo check`` within your code. This can potentially collide with other ``cargo`` commands running concurrently, blocking them from running for a certain amount of time. In these cases it is recommended to disable the ``rust-analyzer.checkOnSave`` configuration and running the ``rust-analyzer: Run flycheck`` command on-demand instead.",
+                        "title": "有用的设置提示",
+                        "description": "有一些事项您可能希望提前根据您的喜好进行配置。我们会在这里列出一些，但请务必查看下面链接的文档！\n\n**将库源标记为只读**\n\n在您的settings.json中添加右侧的代码片段将把所有Rust库源标记为只读。\n\n**保存时检查**\n\n默认情况下，当您保存文件时，rust-analyzer会在您的代码库上运行``cargo check``，在代码中渲染``cargo check``发出的诊断。这可能会与其他同时运行的``cargo``命令发生冲突，阻碍它们运行一段时间。在这些情况下，建议禁用``rust-analyzer.checkOnSave``配置，改为按需运行``rust-analyzer: Run flycheck``命令。",
                         "media": {
                             "markdown": "./walkthrough-setup-tips.md"
                         }
                     },
                     {
                         "id": "docs",
-                        "title": "Visit the docs!",
-                        "description": "Confused about configurations? Want to learn more about rust-analyzer? Visit the [User Manual](https://rust-analyzer.github.io/manual.html)!",
+                        "title": "访问文档！",
+                        "description": "对配置感到困惑？想了解更多关于rust-analyzer的信息？访问[用户手册](https://rust-analyzer.github.io/manual.html)！",
                         "media": {
                             "image": "./icon.png",
-                            "altText": "rust-analyzer logo"
+                            "altText": "rust-analyzer 标志"
                         },
                         "completionEvents": [
                             "onLink:https://rust-analyzer.github.io/manual.html"
@@ -3247,20 +3244,20 @@
                     },
                     {
                         "id": "faq",
-                        "title": "FAQ",
-                        "description": "What are these code hints that are being inserted into my code?\n\nThese hints are called inlay hints which rust-analyzer support and are enabled by default in VSCode. If you wish to disable them you can do so via the ``editor.inlayHints.enabled`` setting.",
+                        "title": "常见问题解答",
+                        "description": "为什么我的代码中被插入了这些代码提示？\n\n这些提示被称为内联提示，rust-analyzer支持此功能，并在VSCode中默认启用。如果您希望禁用它们，可以通过``editor.inlayHints.enabled``设置来实现。",
                         "media": {
                             "image": "icon.png",
-                            "altText": "rust-analyzer logo"
+                            "altText": "rust-analyzer 标志"
                         }
                     },
                     {
                         "id": "changelog",
-                        "title": "Changelog",
-                        "description": "Stay up-to-date with the latest changes in rust-analyzer. Check out the changelog [here](https://rust-analyzer.github.io/thisweek)!",
+                        "title": "更新日志",
+                        "description": "了解rust-analyzer最新变化。查看更新日志[这里](https://rust-analyzer.github.io/thisweek)！",
                         "media": {
                             "image": "icon.png",
-                            "altText": "rust-analyzer logo"
+                            "altText": "rust-analyzer 标志"
                         },
                         "completionEvents": [
                             "onLink:https://rust-analyzer.github.io/thisweek"
