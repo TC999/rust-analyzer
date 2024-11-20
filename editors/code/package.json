@@ -420,8 +420,8 @@
                             "openLogs"
                         ],
                         "enumDescriptions": [
-                            "Stop Server",
-                            "Open Logs"
+                            "停止服务器",
+                            "打开日志"
                         ],
                         "default": "openLogs",
                         "markdownDescription": "点击扩展状态栏项目时要执行的操作。"
